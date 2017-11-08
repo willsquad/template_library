@@ -1,0 +1,103 @@
+/********* Header Variables ***********/
+//$header_block_color: #e74c3c;
+$header_block_color: #c34238;
+$footer_block_color: #3498db;
+$contact_block_color: #9b59b6;
+$services_block_color: #34495e;
+$jumbotron_block_color: #4caf50;
+$gallery_block_color: #607D8B;
+$pricing_block_color: #009688;
+$multi_form_color: #6f6f6f;
+$faq_block_color: #795548;
+$input_block_color: #424242;
+
+$landing_block_color: #3F51B5;
+
+
+$header_box_shadow: rgba(0,0,0,0.2) 0 2px 6px 0;
+
+$header_1_height: 80px;
+
+$header_2_bg: #3f4c6b;
+
+$header_3_height: 120px;
+
+$header_5_height: 120px;
+$header_5_bg: #E40514;
+$header_5_inner_bg: #ddd;
+
+$header_7_bg: #EF7622;
+$header_7_border_top: 3px;
+
+$header_8_height: 120px;
+/********* Header Variables ***********/
+
+
+
+/********* Footer Variables ***********/
+
+$footer_1_height: 85px;
+$footer_1_bg: #FEBA31;
+$footer_1_top_bg : #fbfbfb;
+$footer_1_top_shadow: rgba(0,0,0,0.2) 0px 0px 15px 0px;
+$footer_1_top_height: 350px;
+
+
+$footer_2_top_bg: #fff;
+$footer_2_bg: #19212a;
+/********* Footer Variables ***********/
+
+
+
+/********* Contact Variables **********/
+
+$iframe_height: 350px;
+$contact_4_placeholder_color: #aaa;
+/********* Contact Variables **********/
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+$form_4_main_color: #6753D8;
+$form_5_main_color: #F44336;
+$form_6_main_color: #fff;
+
+.position_absolute {
+    position: absolute;
+}
+
+.position_relative {
+    position: relative;
+}
+
+
+/********* BOOTSTRAP MEDIA-QUERY MIXINS ********* Media Breakpoint  DUBO: down, up, between, only ************
+
+@include media-breakpoint-only(xs) {}  ||  @media (max-width: 575px) {}
+@include media-breakpoint-only(sm) {}  ||  @media (min-width: 576px) and (max-width: 767px) {}
+@include media-breakpoint-only(md) {}  ||  @media (min-width: 768px) and (max-width: 991px) {}
+@include media-breakpoint-only(lg) {}  ||  @media (min-width: 992px) and (max-width: 1199px) {}
+@include media-breakpoint-only(xl) {}  ||  @media (min-width: 1200px) {}
+
+
+@include media-breakpoint-down(xs) {}  ||  @media (max-width: 575px) {}
+@include media-breakpoint-down(sm) {}  ||  @media (max-width: 767px) {}
+@include media-breakpoint-down(md) {}  ||  @media (max-width: 991px) {}
+@include media-breakpoint-down(lg) {}  ||  @media (max-width: 1199px) {}
+
+
+@include media-breakpoint-between(md, xl) {}  ||  @media (min-width: 768px) and (max-width: 1199px) {}
+@include media-breakpoint-between(sm, md) {}  ||  @media (min-width: 576px) and (max-width: 991px) {}
+
+
+@include media-breakpoint-up(xs) {}  ||  @media (min-width: 0px) {}
+@include media-breakpoint-up(sm) {}  ||  @media (min-width: 576px) {}
+@include media-breakpoint-up(md) {}  ||  @media (max-width: 768px) {}
+@include media-breakpoint-up(lg) {}  ||  @media (max-width: 991px) {}
+@include media-breakpoint-up(xl) {}  ||  @media (min-width: 1200px) {}
+
+********* BOOTSTRAP MEDIA-QUERY MIXINS *********/

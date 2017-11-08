@@ -1,0 +1,411 @@
+@import 'base/variables';
+
+body {
+    background-color: #fff;
+    //overflow-y: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+/****** ALL FOOTERS Navigation *******/
+.footer_collection_body {
+    margin: 25px auto;
+    z-index: -1;
+}
+
+.footer_collection_body h1 {
+    font-family: agency fb;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.header_collection_list a.active {
+    background-color: $jumbotron_block_color;
+    color: #fff;
+}
+
+.header_collection_list a {
+    padding: 10px 20px;
+    margin: 5px;
+    font-family: ubuntu;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    color: #333;
+    border-top: 1px solid #ccc;
+
+}
+
+.browser_detect {
+    padding: 15px;
+    font-family: lato;
+    font-size: 12px;
+}
+
+body {
+    font-family: lato;
+}
+
+.btn {
+        display: inline-block;
+        text-decoration: none !important;
+        border: none;
+        border-radius: .3em;
+        box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1), inset 0 -0.25em 0 rgba(0, 0, 0, 0.25), 0 0.25em 0.25em rgba(0, 0, 0, 0.05);
+        color: #fff !important;
+        cursor: pointer;
+        font-family: lato;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        padding: .5em 1.5em .75em;
+        position: relative;
+        text-decoration: none;
+        text-shadow: 0 1px 1px rgba(255, 255, 255, 0.25);
+        vertical-align: middle;
+        white-space: nowrap;
+        transition: all .1s ease-in-out;
+        -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none; 
+}
+      .btn:active {
+        box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2), inset 0 2px 0 rgba(255, 255, 255, 0.1), inset 0 0.25em 0.5em rgba(0, 0, 0, 0.05);
+        margin-top: .25em;
+        padding-bottom: .5em; }
+      .btn:active, .btn:focus {
+        outline: none; }
+
+    .btn--blue {
+      //background-color: #3498db;
+        background-color: #0275d8;}
+
+    .btn--green {
+      background-color: #1abc9c; }
+
+    .btn--red {
+      background-color: #e65d4f; }
+
+    .btn--lg {
+      font-size: 1.5em; }
+
+    .btn--df {
+      font-size: 1.25em; }
+
+    .btn--md {
+      font-size: 1em; }
+
+    .btn--sm {
+      font-size: 0.75em; }
+
+.button-wrapper {
+    margin: 15px 0;
+    /* height: 45px; */
+    /* text-align: center; */
+    line-height: 45px;
+}
+
+
+/**** JUMBOTRON 1 ****/
+.jumbotron1 {
+    .divider {
+        margin-top: 1.5rem!important;
+        margin-bottom: 1.5rem!important;
+    }
+    .more_button {
+        font-size: .8em;
+        text-transform: uppercase;
+    }
+}
+/**** JUMBOTRON 1 ****/
+
+
+/**** JUMBOTRON 2 ****/
+.jumbotron2 {
+    //background-image: linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(../_files/images/jumbotron2.jpg);
+    background-image: linear-gradient(to bottom, rgba(244, 67, 54, 0.75), rgba(244, 67, 54, 0.75)),url(../_files/images/jumbotron2.jpg);
+    color: #fff;
+    height: calc(100vh - 200px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    h2 {
+        font-family: lobster;
+        text-transform: capitalize;
+        font-size: 4em;
+        font-weight: 700;
+        line-height: 1.35em;
+        text-shadow: 1px 1px 1px #000;
+         @media screen and (max-width: 575px) {
+                font-size: 2em;
+            }
+    }
+    .jumbotron_border {
+        width: 50%;
+        min-width: 100px;
+        height: 1px;
+        background-color: #fff;
+        margin: 30px auto;
+    }
+    p {
+        color: #ccc;
+        font-size: 15px;
+        line-height: 1.75em;
+    }
+    .button-wrapper {
+        margin-top: 50px;
+        button {
+            border: 1px solid #fff;
+            text-transform: capitalize;
+            width: 150px;
+            color: #000;
+        }
+    }
+}
+/**** JUMBOTRON 2 ****/
+
+/**** JUMBOTRON 3 ****/
+.jumbotron3 {
+    background-image: linear-gradient(to bottom, rgba(#82C2CC, 0.4), rgba(#82C2CC, 0.4)),url(../_files/images/jumbotron2.jpg);
+    color: #fff;
+    height: calc(100vh - 200px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+    h2 {
+        font-size: 4.5em;
+        font-family: montserrat;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-shadow: 1px 1px 1px #000;
+        @media screen and (max-width: 575px) {
+            font-size: 3em;
+        }
+    }
+    .jumbotron_border {
+        width: 300px;
+        height: 2px;
+        background-color: #fff;
+        margin: 40px 0px;
+    }
+    .bttn-danger {
+        background-color: #F26C4F;
+        width: 175px;
+    }
+    p {
+        font-family: lato;
+        font-size: 24px;
+        margin: 50px 0px;
+        text-shadow: 1px 1px 1px #313131;
+        color: #eee;
+         @media screen and (max-width: 575px) {
+            font-size: 20px;
+        }
+    }
+}
+/**** JUMBOTRON 3 ****/
+
+
+/**** JUMBOTRON 4 ****/
+.jumbotron4 {
+    background-image: linear-gradient(to bottom, rgba(#000, 0.25), rgba(#000, 0.25)),url(../_files/images/jumbotron2.jpg);
+    color: #fff;
+    height: calc(100vh - 350px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    h2 {
+        font-size: 3.5em;
+        font-family: montserrat;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-shadow: 1px 1px 1px #000;
+        @media screen and (max-width: 575px) {
+            font-size: 3em;
+        }
+    }
+    p {
+        margin: 50px 0px;
+    }
+    
+    .bttn-danger {
+        width: 200px;
+    }
+}
+/**** JUMBOTRON 4 ****/
+
+
+/**** JUMBOTRON 5 ****/
+.jumbotron5 {
+    background-image: linear-gradient(to bottom, rgba(#000, 0.25), rgba(#000, 0.25)),url(../_files/images/jumbotron2.jpg);
+    color: #fff;
+    height: calc(100vh - 350px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+    h2 {
+        font-size: 3.5em;
+        font-family: montserrat;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-shadow: 1px 1px 1px #000;
+        border: 4px double #bbb;
+        padding: 20px;
+        background: rgba(0,0,0,0.25);
+        @media screen and (max-width: 575px) {
+            font-size: 2em;
+            padding: 15px;
+        }
+    }
+    p {
+        margin: 50px 0px;
+        font-size:18px;
+        padding: 10px;
+        @media screen and (max-width: 575px) {
+            font-size: 16px;
+        }
+    }
+    
+    .bttn-danger {
+        width: 200px;
+         @media screen and (max-width: 575px) {
+            width: 175px;
+        }
+    }
+}
+/**** JUMBOTRON 5 ****/
+
+
+/**** JUMBOTRON 6 ****/
+.jumbotron6 {
+    height: 100vh;
+}
+.overlay6, .overlay7, .overlay8 {
+    position: absolute;
+    height: 100vh;
+    background: rgba(0,0,0,0.1);
+    width: 100%;
+    h2 {
+        color: #fff;
+        font-size: 4em;
+        font-family: montserrat;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 1px #000;
+         @media screen and (max-width: 575px) {
+            font-size: 2.5em;
+        }
+    }
+    .jumbotron_border {
+        width: 300px;
+        height: 2px;
+        background-color: #fff;
+        margin: 40px 0px;
+        @media screen and (max-width: 575px) {
+             width: 200px;
+        }
+    }
+    p {
+        color: #fff;
+        font-size: 2em;
+        font-family: lato;
+        margin: 75px 0px;
+        text-shadow: 1px 1px 1px #000;
+        @media screen and (max-width: 575px) {
+            font-size: 1em;
+             margin: 40px 0px;
+        }
+    }
+    .more_button {
+        font-family: montserrat;
+        text-transform: uppercase;
+        color: #fff !important;
+        background: rgba(#000, 0.25);
+        border: 3px solid #fff;
+        padding: 15px 30px;
+        text-shadow: 1px 1px 1px #000;
+        cursor: pointer;
+        user-select: none;
+        transition: all 0.3s ease;
+        @media screen and (max-width: 575px) {
+            font-size: .75em;
+            padding: 10px 20px;
+        }
+        
+        &:hover {
+            background: rgba(#000, 0.5);
+        }
+    }
+}
+/**** JUMBOTRON 6 ****/
+
+
+/**** JUMBOTRON 7 ****/
+.jumbotron7 {
+    height: 100vh;
+}
+.overlay7 {
+    text-align: center;
+    p {
+        font-size: 1.25em;
+        margin: 0px;
+        margin-bottom: 40px;
+    }
+    h2 {
+        margin: 50px 0px;
+        font-size: 6em;
+        @media screen and (max-width: 575px) {
+            font-size: 3em;
+            padding: 10px 20px;
+        }
+    }
+    .more_button {
+        display: block;
+        max-width: 200px;
+        margin: 0px auto;
+    }
+    
+}
+/**** JUMBOTRON 7 ****/
+
+
+/**** JUMBOTRON 8 ****/
+.jumbotron8 {
+    height: 100vh;
+}
+.overlay8 {
+    h2 {
+        font-weight: bold;
+        font-size: 7rem;
+        letter-spacing: -0.25rem;
+        line-height: 7rem;
+        text-transform: none;
+        @media screen and (max-width: 991px) {
+            font-size: 4.5em;
+            line-height: 5rem;
+        }
+    }
+    p {
+        font-size: 4rem;
+        line-height: 4rem;
+        margin-top: 10px;
+        font-weight: bold;
+        @media screen and (max-width: 991px) {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+    }
+    .more_button {
+        margin-left: 40px;
+        @media screen and (max-width: 991px) {
+            margin-left: 0px;
+            margin-right: 20px;
+        }
+    }
+}
+/**** JUMBOTRON 8 ****/

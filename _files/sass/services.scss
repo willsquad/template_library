@@ -1,0 +1,467 @@
+@import 'base/variables';
+
+body {
+    background-color: #fff;
+    //overflow-y: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+/****** ALL FOOTERS Navigation *******/
+.footer_collection_body {
+    margin: 25px auto;
+    z-index: -1;
+}
+
+.footer_collection_body h1 {
+    font-family: agency fb;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.header_collection_list a.active {
+    background-color: $services_block_color;
+    color: #fff;
+}
+
+.header_collection_list a {
+    padding: 10px 20px;
+    margin: 5px;
+    font-family: ubuntu;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    color: #333;
+    border-top: 1px solid #ccc;
+
+}
+
+.browser_detect {
+    padding: 15px;
+    font-family: lato;
+    font-size: 12px;
+}
+
+body {
+    font-family: lato;
+}
+
+/**** SERVICES 1 ****/
+.services1 {
+    background-color: #1B97FD;
+    min-height: calc(100vh - 200px);
+    background-image: url(../_files/images/services1.jpg);
+    background-size: cover;
+    padding: 2em;
+    
+    
+    h2 {
+        color: #fff;
+        font-family: Ubuntu;
+        font-weight: bold;
+        font-size: 55px;
+        margin: 40px 0px;
+    }
+    
+    .heading {
+        h2 {
+            font-size: 42px;
+            margin-bottom: 50px;
+            
+            @media screen and (min-width: 991px) {
+                margin-top: 0px;
+            }
+        }
+    }
+
+    h3 {
+        font-size: 28px;
+        color: #fff;
+        font-family: ubuntu;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    p {
+        font-weight: 500;
+        font-style: normal;
+        font-family: 'Roboto', sans-serif;
+        color: rgba(255,255,255,0.6);
+        font-size: 18px;
+        line-height: 1.4;
+        letter-spacing: 1px;
+    }
+}
+/**** SERVICES 1 ****/
+
+
+
+/**** SERVICES 2 ****/
+.services2 {
+    background-image: repeating-linear-gradient(to bottom right,#3f95ea 0,#52d3aa 100%);
+    min-height: calc(100vh - 200px);
+    padding: 2em;
+    color: #fff;
+    font-family: "Source Sans Pro",Arial,sans-serif;
+    
+    .heading {
+        h2 {
+            font-size: 55px;
+            font-weight: 300;
+            text-transform: uppercase;
+            margin-top: 40px;
+            line-height: 1.5;
+        }
+        
+        .services_border{
+            width: 100px;
+            height: 2px;
+            background: #ccc;
+            margin: 40px 0px;
+        }
+        
+        p {
+            font-size: 24px;
+            margin-bottom: 75px;
+            font-weight: 300;
+        }
+    }
+    
+    .content {
+        margin-top: 25px;
+        h2 {
+            font-size: 70px;
+            margin-bottom: 30px;
+        }
+        h4 {
+            font-size: 24px;
+            font-weight: 400;
+            margin: 0 0 30px;
+        }
+        p {
+            margin-bottom: 1.5em;
+            font-size: 20px;
+            font-weight: 300;
+        }
+    }
+}
+/**** SERVICES 2 ****/
+
+
+/**** SERVICES 3 ****/
+.services3 {
+    background-color: #F7F7F7;
+    min-height: calc(100vh - 300px);
+    padding: 3em 2em;
+    
+    .heading {
+        text-align: center;
+        margin-bottom: 50px;
+        h2 {
+            font-family: "roboto slab";
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        
+        .services_border {
+            width: 100px;
+            height: 2px;
+            background: #333;
+            margin: 40px auto; 
+        }
+
+    }
+    
+    .content {
+        background-color: #EEEFF3;
+        max-width: 300px;
+        height: 300px;
+        border-radius: 300px;
+        margin: 0 auto;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+    }
+}
+/**** SERVICES 3 ****/
+
+
+/**** SERVICES 4 ****/
+.services4 {
+    background-color: #ed4f2e;
+    min-height: calc(100vh - 300px);
+    padding: 3em 2em;
+    color: #fbfbfb;
+    .heading {
+        text-align: center;
+        margin-bottom: 50px;
+        h2 {
+            font-family: Ubuntu;
+            font-weight: bold;
+            color: #fbfbfb;
+            text-transform: uppercase;
+            font-size: 35px;
+            padding-bottom: 5px;
+            margin: 0;
+            margin-bottom: 25px;
+        }
+        
+        p {
+            margin: 40px 0px;
+        }
+    }
+    
+    .content {
+        background-color: #fbfbfb;
+        border-radius: 4px;
+        min-height: 450px;
+        padding: 2em;
+        margin-bottom: 20px;
+        h3 {
+            font-size: 27px;
+            background: #ed4f2e;
+            padding: 24px;
+            width: 75px;
+            height: 74px;
+            border-radius: 50px;
+            text-align: center;
+        }
+        h4 {
+            color: #333;
+            font-family: Ubuntu;
+            margin: 20px 0px;
+        }
+        
+        p {
+            font-family: Roboto;
+            color: #333;
+            text-align: center;
+            margin-top: 40px;
+            line-height: 1.75em;
+        }
+    }
+}
+/**** SERVICES 4 ****/
+
+
+/**** SERVICES 5 ****/
+.services5 {
+    background-color: #F7F7F7;
+    min-height: calc(100vh - 300px);
+    padding: 3em 2em;
+    
+    .heading {
+        text-align: center;
+        margin-bottom: 50px;
+        h2 {
+            font-family: "roboto slab";
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        
+        .services_border {
+            width: 100px;
+            height: 2px;
+            background: #333;
+            margin: 40px auto; 
+        }
+
+    }
+    
+    .content{
+        margin-bottom: 50px;
+        text-align: center;
+        padding: 2em;
+        .content_icon {
+            //background-color: #3EC0AF;
+            background-color: #EA5F47;
+            max-width: 250px;
+            height: 250px;
+            border-radius: 250px;
+            margin: 0 auto;
+            margin-bottom: 55px;
+            text-transform: uppercase;
+            color: #fff;
+            h3 {
+                font-size: 3em;
+                span {
+                    text-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5);
+                }
+            }
+        }
+        h2 {
+            font-family: roboto;
+            text-transform: uppercase;
+            font-size: 18px;
+
+        }
+        .content_border {
+            width: 50px;
+            height: 3px;
+            background-color: #EA5F47;
+            margin: 25px auto;
+        }
+        
+        p {
+            color: #666;
+            line-height: 1.75em;
+        }
+    }
+}
+/**** SERVICES 5 ****/
+
+
+/**** SERVICES 6 ****/
+.services6 {
+    background-color: #2F2F39;
+    min-height: calc(100vh - 300px);
+    padding: 3em 2em;
+    text-align: center;
+    color: #fff;
+    
+    .heading {
+        margin-bottom: 40px;
+        h2 {
+            font-family: "source sans pro";
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+        }
+        .services_border {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            margin: 20px auto;
+        }
+        p {
+            color: #ccc;
+            font-family: lato;
+            font-size: .88em;
+            line-height: 1.75em;
+        }
+    }
+    
+    .content {
+        .content_icon {
+            margin: 40px 0px;
+            font-size: 2em;
+        }
+        h2 {
+            font-family: lato;
+            text-transform: uppercase;
+            font-size: .9em;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        .content_border {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            margin: 10px auto;
+            margin-bottom: 25px;
+        }
+        p {
+            color: #aaa;
+            font-size: .85em;
+        }
+    }
+}
+/**** SERVICES 6 ****/
+
+
+/**** SERVICES 7 ****/
+.services7 {
+    background-color: #fff;
+    min-height: calc(100vh - 300px);
+    padding: 3em 2em;
+    text-align: center;
+    color: #333;
+    .heading {
+       margin-bottom: 40px;
+        h2 {
+            font-family: Ubuntu;
+            text-transform: uppercase;
+        }
+        p {
+            margin: 40px auto;
+        }
+    }
+    
+    .image_div {
+        height: 400px;
+    }
+    
+    .text_div {
+        background-color: #F6F6F6;
+        height: 400px;
+        padding: 3em;
+        text-align: left;
+        h3 {
+            font-family: lato;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            margin-top: 5px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        p {
+                font-size: 14px;
+                line-height: 1.75em;
+        }
+    }
+}
+/**** SERVICES 7 ****/
+
+
+/**** SERVICES 8 ****/
+.services8 {
+    //background-color: #165bfb;
+    min-height: calc(100vh - 300px);
+    padding: 3em 2em;
+    text-align: center;
+    color: #333;
+    .heading {
+        h2 {
+            font-size: 38px;
+            font-family: "source sans pro";
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .services_border {
+            width: 75px;
+            height: 1px;
+            background-color: #165bfb;
+            margin: 20px auto;
+            margin-bottom: 50px;
+        }
+        p {
+            font-family: lato;
+            font-size: 22px;
+            line-height: 1.5em;
+            color: rgb(84, 86, 87);
+            margin-bottom: 5em;
+        }
+    }
+    
+    .content_icon {
+        font-size: 4em;
+        color: #2f6cfb;
+        margin-bottom: 50px;
+    }
+    
+    .content_p {
+        color: rgb(145, 149, 151);
+        font-family: "source sans pro";
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0px;
+        font-size: 1.125rem;
+    }
+}
+/**** SERVICES 8 ****/

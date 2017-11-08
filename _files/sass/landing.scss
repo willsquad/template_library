@@ -1,0 +1,577 @@
+@import 'base/variables';
+@import 'base/bootstrap_variables';
+@import 'mixins/breakpoints';
+
+body {
+    background-color: #f4f4f4;
+    //overflow-y: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+.browser_detect {
+    padding: 15px;
+    font-family: lato;
+    font-size: 12px;
+    margin-top: 2em;
+}
+
+/****** ALL LANDINGS Navigation *******/
+.header_collection_body {
+    height: calc(100vh - 200px); 
+    z-index: -1;
+}
+
+.header_collection_body h1 {
+    font-family: agency fb;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.header_collection_list a.active {
+    background-color: $landing_block_color;
+    color: #fff;
+}
+
+.header_collection_list a {
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    border-top: 1px solid #ccc;
+
+}
+/****** ALL LANDINGS Navigation *******/
+
+/****** LANDING COMMON ITEMS *******/
+.logo {
+    font-family: montserrat;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 700;
+    //letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+.landing_h2 {
+    font-family: roboto;
+    font-size: 2.5em;
+    font-weight: 300;
+    margin-bottom: .75em;
+    @include media-breakpoint-between(md, lg) {
+        font-size: 2.25em;
+        margin-bottom: .75em;
+    }
+    @include media-breakpoint-down(md) {
+        font-size: 1.5em;
+    }
+}
+.landing_p {
+    margin-bottom: 2.5em;
+    font-size: 20px;
+    color: #666;
+    font-weight: 300;
+    @include media-breakpoint-between(md, lg) {
+        font-size: 16px;
+    }
+    @include media-breakpoint-down(md) {
+        font-size: 14px;
+    }
+    @include media-breakpoint-down(xs) {
+        text-align: center;
+    }
+}
+
+.landing_button {
+    padding: 15px 30px;
+    background: #2196f3;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-family: montserrat;
+    margin-right: 10px;
+    cursor: pointer;
+    //text-transform: uppercase;
+    @include media-breakpoint-between(md, lg) {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    @include media-breakpoint-down(md) {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+}
+
+.mobile_menu_bars {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-right: 15px;
+    margin-bottom: 1em;
+    i {
+        font-size: 40px;
+    }
+}
+
+.mobile_menu_elements_container {
+    background-color: #333;
+    color: #fff;
+    display: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    z-index: 100;
+}
+
+.menu_elements_mobile a {
+    margin-left: 0px;
+    padding: 12px 10px;
+    border-bottom: none;
+    &:hover {
+        border-bottom: none;
+    }
+    
+}
+
+/****** START of LANDING 1 *******/
+#landing_1 {
+    background-color: #fff;
+    //min-height: 75vh;
+    padding-top: 2em;
+    @include media-breakpoint-down(sm) {
+        padding-bottom: 2em;
+    }
+    .logo_container {
+        margin-bottom: 2em;
+        @include media-breakpoint-down(md) {
+            margin-bottom: 3em;
+        }
+    }
+    .landing_rhs {
+        text-align: center;
+        img {
+            width: 75%;
+             @include media-breakpoint-between(xs, md) {
+                width: 100%;
+            }
+            @include media-breakpoint-down(xs) {
+                width: 50%;
+            }
+        }
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 2em;
+        }
+    }
+    .landing_lhs {
+        padding-left: 5em;
+        min-height: 50vh;
+        @include media-breakpoint-down(md) {
+            padding-left: 1em;
+            min-height: 0px;
+        }
+        @include media-breakpoint-between(md, lg)  {
+            min-height: 0px;
+        }
+    }
+}
+/****** END of LANDING 1 *******/
+
+/****** START of LANDING 2 *******/
+#landing_2 {
+    background-color: #22B1D9;
+    //min-height: 75vh;
+    padding-top: 2em;
+    @include media-breakpoint-down(sm) {
+        padding-bottom: 2em;
+    }
+    .logo_container {
+        margin-bottom: 2em;
+        @include media-breakpoint-down(md) {
+            margin-bottom: 3em;
+        }
+        .logo {
+            color: #fff;
+        }
+    }
+    .landing_rhs {
+        text-align: center;
+        img {
+            width: 75%;
+             @include media-breakpoint-between(xs, md) {
+                width: 100%;
+            }
+            @include media-breakpoint-down(xs) {
+                width: 50%;
+            }
+        }
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 2em;
+        }
+    }
+    .landing_lhs {
+        padding-left: 5em;
+        min-height: 50vh;
+        @include media-breakpoint-down(md) {
+            padding-left: 1em;
+            min-height: 0px;
+        }
+        @include media-breakpoint-between(md, lg)  {
+            min-height: 0px;
+        }
+        .landing_h2 {
+            color: #fff;
+        }
+        .landing_p {
+            color: #eee;
+        }
+        .landing_button {
+            background-color: #fff;
+            color: #000;
+        }
+    }
+}
+/****** END of LANDING 2 *******/
+
+/****** START of LANDING 3 *******/
+#landing_3 {
+    background-color: #fff;
+    //min-height: 75vh;
+    padding-top: 2em;
+    @include media-breakpoint-down(sm) {
+        padding-bottom: 2em;
+    }
+    .logo_container {
+        margin-bottom: 2em;
+        @include media-breakpoint-down(md) {
+            margin-bottom: 3em;
+            display: flex;
+            justify-content: space-between;
+        }
+        @include media-breakpoint-between(md, lg)  {
+            margin-bottom: 4em;;
+        }
+
+    }
+    .logo {
+        padding: 0px 15px;
+        //border-right: 1px solid #ccc;
+        margin-right: 1em;
+    }
+    .nav_container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-grow: 1;
+        &>a {
+            padding:0px 25px;
+            height: 30px;
+            font-weight: bold;
+        }
+    }
+    .landing_lhs {
+        min-height: 50vh;
+        @include media-breakpoint-down(md) {
+            min-height: 0px;
+            margin-bottom: 2em;
+        }
+        
+        @include media-breakpoint-between(md, lg)  {
+            min-height: 0px;
+            margin-bottom: 2em;
+        }
+
+    }
+    .landing_h2 {
+        @include media-breakpoint-between(md, lg)  {
+            font-size: 2em;
+        }
+    }
+    .landing_p {
+        text-align: center;
+    }
+    .browser_div {
+        height: 350px;
+        @include media-breakpoint-down(xl)  {
+            background-size: cover !important;
+        }
+         @include media-breakpoint-down(sm)  {
+            background-size: contain !important;
+        }
+    }
+}
+
+/****** END of LANDING 3 *******/
+
+/****** START of LANDING 4 *******/
+#landing_4 {
+    background-color: #22B1D9;
+    padding-top: 2em;
+    @include media-breakpoint-down(sm) {
+        padding-bottom: 2em;
+    }
+    .logo_container {
+        margin-bottom: 2em;
+        @include media-breakpoint-down(md) {
+            margin-bottom: 3em;
+            display: flex;
+            justify-content: space-between;
+        }
+        @include media-breakpoint-between(md, lg)  {
+            margin-bottom: 4em;;
+        }
+
+    }
+    .logo {
+        padding: 0px 15px;
+        //border-right: 1px solid #ccc;
+        margin-right: 1em;
+        color: #fff;
+    }
+    .nav_container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-grow: 1;
+        &>a {
+            padding:0px 25px;
+            height: 30px;
+            font-weight: bold;
+            color: #fff;
+        }
+    }
+    .landing_lhs {
+        min-height: 50vh;
+        margin-bottom: 1em;
+        @include media-breakpoint-down(md) {
+            min-height: 0px;
+            margin-bottom: 2em;
+        }
+        
+        @include media-breakpoint-between(md, lg)  {
+            min-height: 0px;
+            margin-bottom: 3em;
+        }
+
+    }
+    .landing_h2 {
+        color: #fff;
+        margin-bottom: 1.75em;
+        @include media-breakpoint-between(md, lg)  {
+            font-size: 2em;
+        }
+    }
+    .landing_p {
+        text-align: center;
+        color: #eee;
+    }
+    .landing_button {
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 45px;
+    }
+    .browser_div {
+        height: 350px;
+        @include media-breakpoint-down(xl)  {
+            background-size: cover !important;
+        }
+         @include media-breakpoint-down(sm)  {
+            background-size: contain !important;
+        }
+    }
+}
+
+/****** END of LANDING 4 *******/
+
+/****** START of LANDING 5 *******/
+#landing_5 {
+    background-color: #22B1D9;
+    padding-top: 2em;
+    @include media-breakpoint-down(sm) {
+        padding-bottom: 2em;
+    }
+    .logo_container {
+        margin-bottom: 2em;
+        @include media-breakpoint-down(md) {
+            margin-bottom: 3em;
+            display: flex;
+            justify-content: space-between;
+        }
+        @include media-breakpoint-between(md, lg)  {
+            margin-bottom: 4em;;
+        }
+
+    }
+    .logo {
+        padding: 0px 15px;
+        //border-right: 1px solid #ccc;
+        margin-right: 1em;
+        color: #fff;
+        margin-bottom: 1em;
+    }
+    .nav_container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-grow: 1;
+        &>a {
+            padding:0px 25px;
+            height: 30px;
+            font-weight: bold;
+            color: #fff;
+        }
+    }
+    .landing_lhs {
+        min-height: 50vh;
+        @include media-breakpoint-down(md) {
+            min-height: 0px;
+            margin-bottom: 2em;
+        }
+        
+        @include media-breakpoint-between(md, lg)  {
+            min-height: 0px;
+            margin-bottom: 2em;
+        }
+
+    }
+    .landing_h2 {
+        color: #fff;
+        margin-bottom: 1.75em;
+        @include media-breakpoint-between(md, lg)  {
+            font-size: 2em;
+        }
+    }
+    .landing_p {
+        text-align: center;
+        color: #eee;
+    }
+    .landing_button {
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid #fff;
+    }
+    .input_button_container {
+        width: 100%;
+        text-align: center;
+        input {
+            padding: 15px;
+            width: 50%;
+            margin-right: 5px;
+            @include media-breakpoint-between(md, lg) {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+            @include media-breakpoint-down(md) {
+                padding: 8px 16px;
+                font-size: 12px;
+            }
+        }
+    }
+    
+    .browser_div {
+        height: 350px;
+        @include media-breakpoint-down(xl)  {
+            background-size: cover !important;
+        }
+         @include media-breakpoint-down(sm)  {
+            background-size: contain !important;
+        }
+    }
+}
+
+/****** END of LANDING 5 *******/
+
+/****** START of LANDING 6 *******/
+#landing_6 {
+    background-color: #fff;
+    //min-height: 75vh;
+    padding-top: 2em;
+    @include media-breakpoint-down(sm) {
+        padding-bottom: 2em;
+    }
+    .logo_container {
+        margin-bottom: 2em;
+        @include media-breakpoint-down(md) {
+            margin-bottom: 3em;
+            display: flex;
+            justify-content: space-between;
+        }
+        @include media-breakpoint-between(md, lg)  {
+            margin-bottom: 4em;;
+        }
+
+    }
+    .logo {
+        padding: 0px 15px;
+        //border-right: 1px solid #ccc;
+        margin-right: 1em;
+        margin-bottom: 1em;
+    }
+    .nav_container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-grow: 1;
+        &>a {
+            padding:0px 25px;
+            height: 50px;
+            font-weight: bold;
+        }
+    }
+    .landing_rhs {
+        text-align: center;
+        img {
+            width: 75%;
+             @include media-breakpoint-between(xs, md) {
+                width: 100%;
+            }
+            @include media-breakpoint-down(xs) {
+                width: 50%;
+            }
+        }
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 2em;
+        }
+    }
+    .landing_lhs {
+        padding-left: 0em;
+        min-height: 50vh;
+        @include media-breakpoint-down(md) {
+            padding-left: 1em;
+            min-height: 0px;
+        }
+        @include media-breakpoint-between(md, lg)  {
+            min-height: 0px;
+        }
+    }
+    .input_button_container {
+        width: 100%;
+        @include media-breakpoint-down(xs) {
+            text-align: center;
+        }
+        input {
+            padding: 12px;
+            width: 50%;
+            margin-right: 0px;
+            @include media-breakpoint-between(md, lg) {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+            @include media-breakpoint-down(md) {
+                padding: 6px 12px;
+                font-size: 12px;
+            }
+        }
+    }
+    .landing_button {
+        //line-height: 1.45em;
+        @include media-breakpoint-between(md, lg) {
+                padding: 10px 16px;
+                font-size: 14px;
+        }  
+    }
+}
+/****** END of LANDING 6 *******/
