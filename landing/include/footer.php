@@ -13,6 +13,9 @@
                 <a class="<?php echo ($page_name == 'landing-4.php'?'active': ''); ?>" href="landing-4.php">Landing 4</a>
                 <a class="<?php echo ($page_name == 'landing-5.php'?'active': ''); ?>" href="landing-5.php">Landing 5</a>
                 <a class="<?php echo ($page_name == 'landing-6.php'?'active': ''); ?>" href="landing-6.php">Landing 6</a>
+                <a class="<?php echo ($page_name == 'landing-7.php'?'active': ''); ?>" href="landing-7.php">Landing 7</a>
+                <a class="<?php echo ($page_name == 'landing-8.php'?'active': ''); ?>" href="landing-8.php">Landing 8</a>
+                <a class="<?php echo ($page_name == 'landing-9.php'?'active': ''); ?>" href="landing-9.php">Landing 9</a>
             </div>
             
                 <div class="browser_detect"><a href="../index.php" style="display: inline-flex; align-items:center; font-weight: bold; text-decoration: none;"><i class="material-icons" style="margin-right: 10px;">arrow_back</i> Back To Main page</a></div>

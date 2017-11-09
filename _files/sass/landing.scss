@@ -1,10 +1,8 @@
 @import 'base/variables';
 @import 'base/bootstrap_variables';
 @import 'mixins/breakpoints';
-
 body {
-    background-color: #f4f4f4;
-    //overflow-y: hidden;
+    background-color: #f4f4f4; //overflow-y: hidden;
 }
 
 img {
@@ -18,9 +16,11 @@ img {
     margin-top: 2em;
 }
 
+
 /****** ALL LANDINGS Navigation *******/
+
 .header_collection_body {
-    height: calc(100vh - 200px); 
+    height: calc(100vh - 200px);
     z-index: -1;
 }
 
@@ -43,17 +43,19 @@ img {
     font-weight: bold;
     color: #333;
     border-top: 1px solid #ccc;
-
 }
+
+
 /****** ALL LANDINGS Navigation *******/
 
+
 /****** LANDING COMMON ITEMS *******/
+
 .logo {
     font-family: montserrat;
     text-transform: uppercase;
     font-size: 1.5em;
-    font-weight: 700;
-    //letter-spacing: 1px;
+    font-weight: 700; //letter-spacing: 1px;
     word-spacing: 2px;
 }
 
@@ -70,6 +72,7 @@ img {
         font-size: 1.5em;
     }
 }
+
 .landing_p {
     margin-bottom: 2.5em;
     font-size: 20px;
@@ -79,7 +82,7 @@ img {
         font-size: 16px;
     }
     @include media-breakpoint-down(md) {
-        font-size: 14px;
+        font-size: 15px;
     }
     @include media-breakpoint-down(xs) {
         text-align: center;
@@ -90,12 +93,11 @@ img {
     padding: 15px 30px;
     background: #2196f3;
     border: none;
-    outline: none;
+    outline: none !important;
     color: #fff;
     font-family: montserrat;
     margin-right: 10px;
-    cursor: pointer;
-    //text-transform: uppercase;
+    cursor: pointer; //text-transform: uppercase;
     @include media-breakpoint-between(md, lg) {
         padding: 8px 16px;
         font-size: 14px;
@@ -133,13 +135,13 @@ img {
     &:hover {
         border-bottom: none;
     }
-    
 }
 
+
 /****** START of LANDING 1 *******/
+
 #landing_1 {
-    background-color: #fff;
-    //min-height: 75vh;
+    background-color: #fff; //min-height: 75vh;
     padding-top: 2em;
     @include media-breakpoint-down(sm) {
         padding-bottom: 2em;
@@ -154,7 +156,7 @@ img {
         text-align: center;
         img {
             width: 75%;
-             @include media-breakpoint-between(xs, md) {
+            @include media-breakpoint-between(xs, md) {
                 width: 100%;
             }
             @include media-breakpoint-down(xs) {
@@ -172,17 +174,20 @@ img {
             padding-left: 1em;
             min-height: 0px;
         }
-        @include media-breakpoint-between(md, lg)  {
+        @include media-breakpoint-between(md, lg) {
             min-height: 0px;
         }
     }
 }
+
+
 /****** END of LANDING 1 *******/
 
+
 /****** START of LANDING 2 *******/
+
 #landing_2 {
-    background-color: #22B1D9;
-    //min-height: 75vh;
+    background-color: #22B1D9; //min-height: 75vh;
     padding-top: 2em;
     @include media-breakpoint-down(sm) {
         padding-bottom: 2em;
@@ -200,7 +205,7 @@ img {
         text-align: center;
         img {
             width: 75%;
-             @include media-breakpoint-between(xs, md) {
+            @include media-breakpoint-between(xs, md) {
                 width: 100%;
             }
             @include media-breakpoint-down(xs) {
@@ -218,7 +223,7 @@ img {
             padding-left: 1em;
             min-height: 0px;
         }
-        @include media-breakpoint-between(md, lg)  {
+        @include media-breakpoint-between(md, lg) {
             min-height: 0px;
         }
         .landing_h2 {
@@ -233,12 +238,15 @@ img {
         }
     }
 }
+
+
 /****** END of LANDING 2 *******/
 
+
 /****** START of LANDING 3 *******/
+
 #landing_3 {
-    background-color: #fff;
-    //min-height: 75vh;
+    background-color: #fff; //min-height: 75vh;
     padding-top: 2em;
     @include media-breakpoint-down(sm) {
         padding-bottom: 2em;
@@ -250,14 +258,13 @@ img {
             display: flex;
             justify-content: space-between;
         }
-        @include media-breakpoint-between(md, lg)  {
-            margin-bottom: 4em;;
+        @include media-breakpoint-between(md, lg) {
+            margin-bottom: 4em;
+            ;
         }
-
     }
     .logo {
-        padding: 0px 15px;
-        //border-right: 1px solid #ccc;
+        padding: 0px 15px; //border-right: 1px solid #ccc;
         margin-right: 1em;
     }
     .nav_container {
@@ -266,7 +273,7 @@ img {
         justify-content: flex-end;
         flex-grow: 1;
         &>a {
-            padding:0px 25px;
+            padding: 0px 25px;
             height: 30px;
             font-weight: bold;
         }
@@ -277,15 +284,13 @@ img {
             min-height: 0px;
             margin-bottom: 2em;
         }
-        
-        @include media-breakpoint-between(md, lg)  {
+        @include media-breakpoint-between(md, lg) {
             min-height: 0px;
             margin-bottom: 2em;
         }
-
     }
     .landing_h2 {
-        @include media-breakpoint-between(md, lg)  {
+        @include media-breakpoint-between(md, lg) {
             font-size: 2em;
         }
     }
@@ -294,18 +299,21 @@ img {
     }
     .browser_div {
         height: 350px;
-        @include media-breakpoint-down(xl)  {
+        @include media-breakpoint-down(xl) {
             background-size: cover !important;
         }
-         @include media-breakpoint-down(sm)  {
+        @include media-breakpoint-down(sm) {
             background-size: contain !important;
         }
     }
 }
 
+
 /****** END of LANDING 3 *******/
 
+
 /****** START of LANDING 4 *******/
+
 #landing_4 {
     background-color: #22B1D9;
     padding-top: 2em;
@@ -319,14 +327,13 @@ img {
             display: flex;
             justify-content: space-between;
         }
-        @include media-breakpoint-between(md, lg)  {
-            margin-bottom: 4em;;
+        @include media-breakpoint-between(md, lg) {
+            margin-bottom: 4em;
+            ;
         }
-
     }
     .logo {
-        padding: 0px 15px;
-        //border-right: 1px solid #ccc;
+        padding: 0px 15px; //border-right: 1px solid #ccc;
         margin-right: 1em;
         color: #fff;
     }
@@ -336,7 +343,7 @@ img {
         justify-content: flex-end;
         flex-grow: 1;
         &>a {
-            padding:0px 25px;
+            padding: 0px 25px;
             height: 30px;
             font-weight: bold;
             color: #fff;
@@ -349,17 +356,15 @@ img {
             min-height: 0px;
             margin-bottom: 2em;
         }
-        
-        @include media-breakpoint-between(md, lg)  {
+        @include media-breakpoint-between(md, lg) {
             min-height: 0px;
             margin-bottom: 3em;
         }
-
     }
     .landing_h2 {
         color: #fff;
         margin-bottom: 1.75em;
-        @include media-breakpoint-between(md, lg)  {
+        @include media-breakpoint-between(md, lg) {
             font-size: 2em;
         }
     }
@@ -375,18 +380,21 @@ img {
     }
     .browser_div {
         height: 350px;
-        @include media-breakpoint-down(xl)  {
+        @include media-breakpoint-down(xl) {
             background-size: cover !important;
         }
-         @include media-breakpoint-down(sm)  {
+        @include media-breakpoint-down(sm) {
             background-size: contain !important;
         }
     }
 }
 
+
 /****** END of LANDING 4 *******/
 
+
 /****** START of LANDING 5 *******/
+
 #landing_5 {
     background-color: #22B1D9;
     padding-top: 2em;
@@ -400,14 +408,13 @@ img {
             display: flex;
             justify-content: space-between;
         }
-        @include media-breakpoint-between(md, lg)  {
-            margin-bottom: 4em;;
+        @include media-breakpoint-between(md, lg) {
+            margin-bottom: 4em;
+            ;
         }
-
     }
     .logo {
-        padding: 0px 15px;
-        //border-right: 1px solid #ccc;
+        padding: 0px 15px; //border-right: 1px solid #ccc;
         margin-right: 1em;
         color: #fff;
         margin-bottom: 1em;
@@ -418,7 +425,7 @@ img {
         justify-content: flex-end;
         flex-grow: 1;
         &>a {
-            padding:0px 25px;
+            padding: 0px 25px;
             height: 30px;
             font-weight: bold;
             color: #fff;
@@ -430,17 +437,15 @@ img {
             min-height: 0px;
             margin-bottom: 2em;
         }
-        
-        @include media-breakpoint-between(md, lg)  {
+        @include media-breakpoint-between(md, lg) {
             min-height: 0px;
             margin-bottom: 2em;
         }
-
     }
     .landing_h2 {
         color: #fff;
         margin-bottom: 1.75em;
-        @include media-breakpoint-between(md, lg)  {
+        @include media-breakpoint-between(md, lg) {
             font-size: 2em;
         }
     }
@@ -470,24 +475,25 @@ img {
             }
         }
     }
-    
     .browser_div {
         height: 350px;
-        @include media-breakpoint-down(xl)  {
+        @include media-breakpoint-down(xl) {
             background-size: cover !important;
         }
-         @include media-breakpoint-down(sm)  {
-            background-size: contain !important;
+        @include media-breakpoint-down(sm) {
+            //background-size: contain !important;
         }
     }
 }
 
+
 /****** END of LANDING 5 *******/
 
+
 /****** START of LANDING 6 *******/
+
 #landing_6 {
-    background-color: #fff;
-    //min-height: 75vh;
+    background-color: #fff; //min-height: 75vh;
     padding-top: 2em;
     @include media-breakpoint-down(sm) {
         padding-bottom: 2em;
@@ -499,14 +505,13 @@ img {
             display: flex;
             justify-content: space-between;
         }
-        @include media-breakpoint-between(md, lg)  {
-            margin-bottom: 4em;;
+        @include media-breakpoint-between(md, lg) {
+            margin-bottom: 4em;
+            ;
         }
-
     }
     .logo {
-        padding: 0px 15px;
-        //border-right: 1px solid #ccc;
+        padding: 0px 15px; //border-right: 1px solid #ccc;
         margin-right: 1em;
         margin-bottom: 1em;
     }
@@ -516,7 +521,7 @@ img {
         justify-content: flex-end;
         flex-grow: 1;
         &>a {
-            padding:0px 25px;
+            padding: 0px 25px;
             height: 50px;
             font-weight: bold;
         }
@@ -525,7 +530,7 @@ img {
         text-align: center;
         img {
             width: 75%;
-             @include media-breakpoint-between(xs, md) {
+            @include media-breakpoint-between(xs, md) {
                 width: 100%;
             }
             @include media-breakpoint-down(xs) {
@@ -543,7 +548,7 @@ img {
             padding-left: 1em;
             min-height: 0px;
         }
-        @include media-breakpoint-between(md, lg)  {
+        @include media-breakpoint-between(md, lg) {
             min-height: 0px;
         }
     }
@@ -566,13 +571,356 @@ img {
             }
         }
     }
-    .landing_button {
-        //line-height: 1.45em;
-        padding: 14px 30px;
+}
+
+
+/****** END of LANDING 6 *******/
+
+
+/****** START of LANDING 7 *******/
+
+#landing_7 {
+    background-color: #22B1D9;
+    padding-top: 2em;
+    @include media-breakpoint-down(sm) {
+        padding-bottom: 2em;
+    }
+    .logo_container {
+        margin-top: 1em;
+        margin-bottom: 2em;
+        display: flex;
+        justify-content: space-between;
+        @include media-breakpoint-down(md) {
+
+            display: flex;
+            justify-content: space-between;
+        }
         @include media-breakpoint-between(md, lg) {
-                padding: 10px 16px;
-                font-size: 14px;
-        }  
+            //margin-bottom: 4em;
+        }
+    }
+    .logo {
+        padding: 0px 15px; //border-right: 1px solid #ccc;
+        //margin-right: 1em;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 3em;
+        font-size: 1.75em;
+        @include media-breakpoint-between(md, lg) {
+            margin-bottom: 2em;
+        }
+        @include media-breakpoint-down(md) {
+            margin-bottom: 2em;
+        }
+    }
+    .nav_container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        //flex-grow: 1;
+        &>a {
+            padding: 0px 25px;
+            height: 25px;
+            font-weight: bold;
+            color: #fff;
+        }
+    }
+    .link_and_button {
+        button  {
+            background: #fff;
+            border: none;
+            padding: 8px 24px;
+            font-family: roboto;
+            font-size: 14px;
+            font-weight: 300;
+            @include media-breakpoint-down(xs) {
+                margin-left: 1em;
+            }
+        }
+    }
+    .landing_lhs {
+        min-height: 50vh;
+        margin-bottom: 1em;
+        @include media-breakpoint-down(md) {
+            min-height: 0px;
+            margin-bottom: 2em;
+        }
+        @include media-breakpoint-between(md, lg) {
+            min-height: 0px;
+            margin-bottom: 3em;
+        }
+    }
+    .landing_h2 {
+        color: #fff;
+        margin-bottom: 1em;
+        text-align: center;
+        line-height: 1.5em;
+        @include media-breakpoint-between(md, lg) {
+            font-size: 2em;
+        }
+    }
+    .landing_p {
+        text-align: center;
+        color: #eee;
+    }
+    .landing_button {
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 45px;
+    }
+    .browser_div {
+        height: 350px;
+        @include media-breakpoint-down(xl) {
+            background-size: cover !important;
+        }
+        @include media-breakpoint-down(sm) {
+            background-size: contain !important;
+        }
     }
 }
-/****** END of LANDING 6 *******/
+
+
+/****** END of LANDING 7 *******/
+
+
+/****** START of LANDING 8 *******/
+
+#landing_8 {
+    background-color: #fff; //min-height: 75vh;
+    padding-top: 2em;
+    @include media-breakpoint-down(sm) {
+        padding-bottom: 2em;
+    }
+    .logo_container {
+        margin-bottom: 5em;
+        @include media-breakpoint-down(md) {
+            margin-bottom: 3em;
+            display: flex;
+            justify-content: space-between;
+        }
+        @include media-breakpoint-between(md, lg) {
+            margin-bottom: 4em;
+            ;
+        }
+    }
+    .logo {
+        padding: 0px 15px; //border-right: 1px solid #ccc;
+        margin-right: 1em;
+        font-size: 1.25em;
+    }
+    .nav_container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-grow: 1;
+        &>a {
+            padding: 0px 25px;
+            height: 30px;
+            font-weight: bold;
+        }
+    }
+    .landing_lhs {
+        min-height: 75vh;
+        @include media-breakpoint-down(md) {
+            min-height: 0px;
+            margin-bottom: 2em;
+        }
+        @include media-breakpoint-between(md, lg) {
+            min-height: 0px;
+            margin-bottom: 2em;
+        }
+    }
+    .landing_h2 {
+        @include media-breakpoint-between(md, lg) {
+            font-size: 2em;
+        }
+    }
+    .landing_p {
+        text-align: center;
+        width:75%;
+    }
+    .landing_button {
+        i{
+            margin-right: 10px;
+        }
+    }
+    .hr_line {
+        background-color: #ccc;
+        height:1px;
+        width: 100%;
+        margin-top: 6em;
+    }
+    .or_sign_up_with {
+        background-color: #fff;
+        display: inline-block;
+        margin: 0 auto;
+        position: relative;
+        top: -14px;
+        padding: 0px 30px;
+        color: #999;
+        margin-bottom: 5em;
+    }
+    .sign_up_email {
+        padding-bottom: 5em;
+    }
+    .input_button_container {
+        width: 100%;
+        text-align: center;
+        input {
+            padding: 15px;
+            width: 47.5%;
+            margin-right: 2%;
+            margin-bottom: 1em;
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.125);
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+            @include media-breakpoint-between(md, lg) {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+            @include media-breakpoint-down(md) {
+                padding: 8px 16px;
+                font-size: 12px;
+                width: 98%;
+            }
+        }
+        .landing_button {
+            width: 98%;
+            background-color: #4CAF50;
+        }
+    }
+}
+
+
+/****** END of LANDING 8 *******/
+
+
+/****** START of LANDING 9 *******/
+
+#landing_9 {
+    background-color: #fff; //min-height: 75vh;
+    padding-top: 2em;
+    @include media-breakpoint-down(sm) {
+        padding-bottom: 2em;
+    }
+    .logo_container {
+        margin-bottom: 5em;
+        @include media-breakpoint-down(md) {
+            margin-bottom: 3em;
+            display: flex;
+            justify-content: space-between;
+        }
+        @include media-breakpoint-between(md, lg) {
+            margin-bottom: 4em;
+            ;
+        }
+    }
+    .logo {
+        padding: 0px 15px; //border-right: 1px solid #ccc;
+        margin-right: 1em;
+        font-size: 1.25em;
+    }
+    .nav_container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-grow: 1;
+        &>a {
+            padding: 0px 25px;
+            height: 25px;
+            font-weight: bold;
+        }
+    }
+    .landing_lhs {
+        min-height: 75vh;
+        @include media-breakpoint-down(md) {
+            min-height: 0px;
+            margin-bottom: 2em;
+        }
+        @include media-breakpoint-between(md, lg) {
+            min-height: 0px;
+            margin-bottom: 2em;
+        }
+    }
+    .landing_h2 {
+        @include media-breakpoint-between(md, lg) {
+            font-size: 2em;
+        }
+    }
+    .landing_p {
+        text-align: center;
+        width:75%;
+    }
+    .landing_button {
+        i{
+            margin-right: 10px;
+        }
+    }
+    .hr_line {
+        background-color: #ccc;
+        height:1px;
+        width: 100%;
+        margin-top: 5em;
+    }
+
+    .input_button_container {
+        width: 100%;
+        text-align: center;
+        input {
+            padding: 15px;
+            width: 47.5%;
+            margin-right: 2%;
+            margin-bottom: 1em;
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.125);
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+            @include media-breakpoint-between(md, lg) {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+            @include media-breakpoint-down(md) {
+                padding: 8px 16px;
+                font-size: 12px;
+                width: 98%;
+            }
+        }
+        .landing_button {
+            width: 98%;
+            background-color: #4CAF50;
+        }
+    }
+    .features_div {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 1em;
+        .feature {
+            width: 33%;
+            text-align: center;
+            padding: 3em 0em;
+            i{
+                font-size: 2.5em;
+                color: #999;
+            }
+            h4{
+                font-size: 20px;
+                margin:1.5em 0;
+            }
+            p{
+                font-size: 14px;
+                width: 50%;
+                margin: 0 auto;
+            }
+            @include media-breakpoint-down(md) {
+                width: 100%;
+                padding: 2em 0;
+            }
+        }
+    }
+}
+
+
+/****** END of LANDING 9 *******/
