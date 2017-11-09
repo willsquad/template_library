@@ -568,6 +568,7 @@ img {
     }
     .landing_button {
         //line-height: 1.45em;
+        padding: 14px 30px;
         @include media-breakpoint-between(md, lg) {
                 padding: 10px 16px;
                 font-size: 14px;
