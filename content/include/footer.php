@@ -4,19 +4,14 @@
 
             <img src="../_files/images/demo-arrow.png" alt="arrow" height="120">
 
-            <h1>Landing</h1>
+            <h1>Content</h1>
 
             <div class="header_collection_list d-flex flex-wrap">
-                <a class="<?php echo ($page_name == 'index.php'?'active': ''); ?>"  href="index.php">Landing 1</a>
-                <a class="<?php echo ($page_name == 'landing-2.php'?'active': ''); ?>" href="landing-2.php">Landing 2</a>
-                <a class="<?php echo ($page_name == 'landing-3.php'?'active': ''); ?>" href="landing-3.php">Landing 3</a>
-                <a class="<?php echo ($page_name == 'landing-4.php'?'active': ''); ?>" href="landing-4.php">Landing 4</a>
-                <a class="<?php echo ($page_name == 'landing-5.php'?'active': ''); ?>" href="landing-5.php">Landing 5</a>
-                <a class="<?php echo ($page_name == 'landing-6.php'?'active': ''); ?>" href="landing-6.php">Landing 6</a>
-                <a class="<?php echo ($page_name == 'landing-7.php'?'active': ''); ?>" href="landing-7.php">Landing 7</a>
-                <a class="<?php echo ($page_name == 'landing-8.php'?'active': ''); ?>" href="landing-8.php">Landing 8</a>
-                <a class="<?php echo ($page_name == 'landing-9.php'?'active': ''); ?>" href="landing-9.php">Landing 9</a>
-                <a class="<?php echo ($page_name == 'landing-10.php'?'active': ''); ?>" href="landing-10.php">Landing 10</a>
+                <a class="<?php echo ($page_name == 'index.php'?'active': ''); ?>"  href="index.php">Content 1</a>
+                <a class="<?php echo ($page_name == 'content-2.php'?'active': ''); ?>" href="content-2.php">Content 2</a>
+                <a class="<?php echo ($page_name == 'content-3.php'?'active': ''); ?>" href="content-3.php">Content 3</a>
+                <a class="<?php echo ($page_name == 'content-4.php'?'active': ''); ?>" href="content-4.php">Content 4</a>
+                <a class="<?php echo ($page_name == 'content-5.php'?'active': ''); ?>" href="content-5.php">Content 5</a>
             </div>
             
                 <div class="browser_detect"><a href="../index.php" style="display: inline-flex; align-items:center; font-weight: bold; text-decoration: none;"><i class="material-icons" style="margin-right: 10px;">arrow_back</i> Back To Main page</a></div>

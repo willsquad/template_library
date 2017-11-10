@@ -111,6 +111,13 @@
                     </div>
                 </a>
             </div>
+            <div class="col-sm-4 col-lg-3 col-12">
+                <a href="content">
+                    <div class="template_element_container content_block d-flex justify-content-center align-items-center">
+                        <h2>Content</h2>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
     

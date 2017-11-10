@@ -1,0 +1,266 @@
+@import 'base/variables';
+@import 'base/bootstrap_variables';
+@import 'mixins/breakpoints';
+body {
+    background-color: #f4f4f4; //overflow-y: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+.browser_detect {
+    padding: 15px;
+    font-family: lato;
+    font-size: 12px;
+    margin-top: 2em;
+}
+
+
+/****** ALL LANDINGS Navigation *******/
+
+.header_collection_body {
+    height: calc(100vh - 200px);
+    z-index: -1;
+}
+
+.header_collection_body h1 {
+    font-family: agency fb;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.header_collection_list a.active {
+    background-color: $content_block_color;
+    color: #fff;
+}
+
+.header_collection_list a {
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    border-top: 1px solid #ccc;
+}
+
+
+/****** ALL LANDINGS Navigation *******/
+
+.content_h2 {
+    font-family: "roboto slab";
+    letter-spacing: -2px;
+    font-size: 2.25em;
+    font-weight: 300;
+    margin-bottom: .75em;
+    word-spacing: 4px;
+    @include media-breakpoint-between(md, lg) {
+        font-size: 2.25em;
+        margin-bottom: .75em;
+    }
+    @include media-breakpoint-down(md) {
+        font-size: 1.5em;
+    }
+}
+
+.content_p {
+    font-size: 15px;
+    font-family: roboto;
+    line-height: 1.75em;
+    font-weight: 300;
+}
+
+/***** Contents 1 *****/
+
+#contents_1 {
+    background-color: #fff;
+    min-height: 30vh;
+    padding: 5em 0em;
+    .stars_div {
+        margin: 4em 0;
+        i {
+            font-size: 1.5em;
+            margin-right: 15px;
+        }
+    }
+    p {
+        text-align: center;
+        margin-bottom: 0px;
+        &.intro_p {
+            font-size: 14px;
+        }
+        &.content_p {
+            font-size: 14px;
+            font-family: "roboto slab";
+            line-height: 1.75em;
+            width: 70%;
+        }
+    }
+}
+
+
+/***** End of Contents 1 *****/
+
+
+/***** Contents 2 *****/
+
+#contents_2 {
+    background-color: #fff;
+    min-height: 30vh;
+    padding: 5em 15px;
+    .content_div{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 1em;
+    }
+    .content_p {
+        width: 75%;
+        @include media-breakpoint-down(xs){
+            width: 100%;
+        }
+    }
+    .video_div {
+        height: 350px;
+        background-color: #999;
+    }
+}
+
+
+/***** End of Contents 2 *****/
+
+
+/***** Contents 3 *****/
+
+#contents_3 {
+    background-color: #fff;
+    min-height: 30vh;
+    padding: 5em 15px;
+    .content_h2{
+        text-align: center;
+    }
+    .item_div_container{
+        .item_div{
+            text-align: center;
+            padding: 2em 2em;
+            @include media-breakpoint-down(lg) {
+                padding: 2em 1em;
+            }
+            @include media-breakpoint-down(md) {
+                padding: 1em 1em;
+            }
+            .item_div_body{
+                border: 1px solid #ccc;
+                padding: 4em 0em;
+                border-radius: 4px;
+            }
+            .item_title{
+                font-family: "roboto slab";
+                font-size: 20px;
+            }
+            .item_content{
+                font-size: 14px;
+                width: 70%;
+                margin: 1em auto 2em;
+                font-family: roboto;
+                font-weight: 300;
+            }
+            .item_more{
+                font-size: 12px;
+                text-decoration: none;
+                i{
+                    font-size: 10px;
+                    margin-left: 1em;
+                }
+            }
+        }
+    }
+}
+
+
+/***** End of Contents 3 *****/
+
+/***** Contents 4 *****/
+
+#contents_4 {
+    background-color: #fff;
+    min-height: 30vh;
+    padding: 5em 15px;
+    .content_div{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 1em;
+    }
+    .content_h2{
+        text-align: right;
+    }
+    .content_p {
+        width: 75%;
+        font-size: 16px;
+        margin-left: auto;
+        text-align: right;
+        @include media-breakpoint-down(xs){
+            width: 100%;
+        }
+        &.works_with_p{
+            margin-top: 2em;
+            margin-bottom: 2em;
+            font-family: lato;
+        }
+    }
+    .works_with_div {
+        text-align: right;
+        i{
+            margin-left: 15px;
+            color: #999;
+            font-size: 1.3em;
+        }
+    }
+    .video_div {
+        height: 350px;
+        background-color: #999;
+    }
+}
+
+/***** End of Contents 4 *****/
+
+
+/***** Contents 5 *****/
+#contents_5{
+    background:url(../images/macbook_bg.jpg) no-repeat;
+    //min-height: 75vh;
+    padding: 5em 15px;
+    background-size: cover;
+    .content_div{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background: #fff;
+        padding: 4em 2em;
+        text-align: center;
+    }
+    .content_p {
+        width: 75%;
+        font-size: 16px;
+        margin-left: auto;
+        margin-right: auto;
+        @include media-breakpoint-down(xs){
+            width: 100%;
+        }
+        &.works_with_p{
+            margin-top: 2em;
+            margin-bottom: 2em;
+            font-family: lato;
+        }
+    }
+    .works_with_div {
+        i{
+            margin-left: 15px;
+            color: #999;
+            font-size: 1.3em;
+        }
+    }
+}
+/***** End of Contents 5 *****/
