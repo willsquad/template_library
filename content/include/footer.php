@@ -12,6 +12,11 @@
                 <a class="<?php echo ($page_name == 'content-3.php'?'active': ''); ?>" href="content-3.php">Content 3</a>
                 <a class="<?php echo ($page_name == 'content-4.php'?'active': ''); ?>" href="content-4.php">Content 4</a>
                 <a class="<?php echo ($page_name == 'content-5.php'?'active': ''); ?>" href="content-5.php">Content 5</a>
+                <a class="<?php echo ($page_name == 'content-6.php'?'active': ''); ?>" href="content-6.php">Content 6</a>
+                <a class="<?php echo ($page_name == 'content-7.php'?'active': ''); ?>" href="content-7.php">Content 7</a>
+                <a class="<?php echo ($page_name == 'content-8.php'?'active': ''); ?>" href="content-8.php">Content 8</a>
+                <a class="<?php echo ($page_name == 'content-9.php'?'active': ''); ?>" href="content-9.php">Content 9</a>
+                <a class="<?php echo ($page_name == 'content-10.php'?'active': ''); ?>" href="content-10.php">Content 10</a>
             </div>
             
                 <div class="browser_detect"><a href="../index.php" style="display: inline-flex; align-items:center; font-weight: bold; text-decoration: none;"><i class="material-icons" style="margin-right: 10px;">arrow_back</i> Back To Main page</a></div>

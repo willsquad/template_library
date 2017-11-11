@@ -109,6 +109,9 @@ a:hover {
     &.content_block {
         background-color: $content_block_color;
     }
+    &.slider_block {
+        background-color: $slider_block_color;
+    }
     
     
     &:hover {

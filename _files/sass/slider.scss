@@ -1,0 +1,77 @@
+@import 'base/variables';
+@import 'base/bootstrap_variables';
+@import 'mixins/breakpoints';
+body {
+    background-color: #f4f4f4; //overflow-y: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+.browser_detect {
+    padding: 15px;
+    font-family: lato;
+    font-size: 12px;
+    margin-top: 2em;
+}
+
+
+/****** ALL LANDINGS Navigation *******/
+
+.header_collection_body {
+    height: calc(100vh - 200px);
+    z-index: -1;
+}
+
+.header_collection_body h1 {
+    font-family: agency fb;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.header_collection_list a.active {
+    background-color: $content_block_color;
+    color: #fff;
+}
+
+.header_collection_list a {
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    border-top: 1px solid #ccc;
+}
+
+
+/****** ALL LANDINGS Navigation *******/
+.arrow_left, .arrow_right{
+    font-size: 1.5em !important;
+    cursor: pointer;
+}
+.arrow_left{
+    float: left;
+    position: absolute;
+    top: 50%;
+}
+.arrow_right{
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+#slider_1 {
+    background-color: #fff;
+    min-height: 50vh;
+    .slider_1_div {
+        min-width: 0;
+        max-width: 100%;
+        .slide {
+            min-height: 30vh;
+            padding: 2em 4em;
+            outline: none;
+        }
+    }
+}

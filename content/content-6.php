@@ -1,18 +1,16 @@
 <?php 
 
-$title = 'Content 4';
+$title = 'Content 6';
 include('include/header.php');
 
 ?>
 
 <div class="container-fluid">
-    <div id="contents_4" class="row">
+    <div id="contents_6" class="row">
         <div class="col-12 col-sm-8 push-sm-2">
             <div class="row">
-                <div class="col-12 col-md-6 video_div">
-
-                </div>
-                <div class="col-12 col-md-6 content_div">
+                <div class="col-12 content_div">
+                    <h2 class="content_logo">company x</h2>
                     <h2 class="content_h2">Template</h2>
                     <p class="content_p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe deleniti corporis magni eveniet, nesciunt,
                         deserunt quisquam perspiciatis reiciendis.</p>
