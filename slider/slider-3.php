@@ -1,14 +1,17 @@
 <?php 
 
-$title = 'Slider 1';
+$title = 'Slider 3';
 include('include/header.php');
 
 ?>
 
 <div class="container-fluid">
-    <div id="slider_1" class="row">
+    <div id="slider_3" class="row">
+        <div class="col-12 slider_bg">
+            <!-- <img src="../_files/images/macbook_bg.jpg"> -->
+        </div>
         <div class="col-12 col-md-8 offset-md-2 d-flex align-items-center justify-content-center flex-column">
-            <div class="slider_1_div">
+            <div class="slider_3_div">
                 <div class="slide">
                     <h2 class="slider_h2">Template Wireframe Kit 1</h2>
                     <p class="slider_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, dolor quod perferendis suscipit reprehenderit,

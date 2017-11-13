@@ -8,8 +8,13 @@
 
         <div class="header_collection_list d-flex flex-wrap">
             <a class="<?php echo ($page_name == 'index.php'?'active': ''); ?>"  href="index.php">Slider 1</a>
-<!--                 <a class="<?php echo ($page_name == 'slider-2.php'?'active': ''); ?>" href="slider-2.php">Slider 2</a>
--->            </div>
+            <a class="<?php echo ($page_name == 'slider-2.php'?'active': ''); ?>" href="slider-2.php">Slider 2</a>
+            <a class="<?php echo ($page_name == 'slider-3.php'?'active': ''); ?>" href="slider-3.php">Slider 3</a>
+            <a class="<?php echo ($page_name == 'slider-4.php'?'active': ''); ?>" href="slider-4.php">Slider 4</a>
+            <a class="<?php echo ($page_name == 'slider-5.php'?'active': ''); ?>" href="slider-5.php">Slider 5</a>
+            <a class="<?php echo ($page_name == 'slider-6.php'?'active': ''); ?>" href="slider-6.php">Slider 6</a>
+            <a class="<?php echo ($page_name == 'slider-7.php'?'active': ''); ?>" href="slider-7.php">Slider 7</a>
+            </div>
         
             <div class="browser_detect"><a href="../index.php" style="display: inline-flex; align-items:center; font-weight: bold; text-decoration: none;"><i class="material-icons" style="margin-right: 10px;">arrow_back</i> Back To Main page</a></div>
             <?php

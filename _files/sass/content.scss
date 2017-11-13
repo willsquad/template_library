@@ -370,6 +370,9 @@ img {
     .video_div {
         height: 500px;
         background-color: #999;
+        @include media-breakpoint-down(sm){
+            height: 350px;
+        }
     }
     .features_container {
         margin-top:2em;
@@ -448,6 +451,9 @@ img {
         height: 75vh;
         background-color: #999;
         padding: 0px;
+        @include media-breakpoint-down(sm){
+            height: 350px;
+        }
     }
 }
 
@@ -507,23 +513,6 @@ img {
             }
         }
     }
-    .works_with_div {
-        i{
-            margin-left: 15px;
-            color: #999;
-            font-size: 1.3em;
-        }
-        text-align: center;
-    }
-    .content_button{
-        margin-top: 3em;
-        font-family: "roboto slab";
-    }
-    .video_div {
-        height: 75vh;
-        background-color: #999;
-        padding: 0px;
-    }
 }
 
 
@@ -580,6 +569,9 @@ img {
         height: 75vh;
         background-color: #999;
         padding: 0px;
+        @include media-breakpoint-down(sm){
+            height: 350px;
+        }
     }
 }
 
