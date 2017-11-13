@@ -2,25 +2,21 @@ $(document).ready(function(){
     $('.slider_1_div').slick({
         prevArrow:'<i class="arrow_left fa fa-chevron-left"></i>',
         nextArrow:'<i class="arrow_right fa fa-chevron-right"></i>',
-        initialSlide: 1,
         dots:true
     });
     $('.slider_2_div').slick({
         prevArrow:'',
         nextArrow:'<i class="arrow_right fa fa-chevron-right"></i>',
-        initialSlide: 1,
         dots:true
     });
     $('.slider_3_div').slick({
         prevArrow:'<i class="arrow_left fa fa-chevron-left"></i>',
         nextArrow:'<i class="arrow_right fa fa-chevron-right"></i>',
-        initialSlide: 1,
         dots:true
     });
     $('.slider_4_div').slick({
         prevArrow:'<i class="arrow_left fa fa-chevron-left"></i>',
         nextArrow:'<i class="arrow_right fa fa-chevron-right"></i>',
-        initialSlide: 1,
         dots:true
     });
     $('.slider_5_div').slick({
@@ -86,7 +82,6 @@ $(document).ready(function(){
           ]
     });
     $('.slider_7_div').slick({
-        initialSlide: 1,
         prevArrow:'<i class="arrow_left fa fa-chevron-left"></i>',
         nextArrow:'<i class="arrow_right fa fa-chevron-right"></i>',
         dots:true
