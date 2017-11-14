@@ -125,6 +125,13 @@
                     </div>
                 </a>
             </div>
+            <div class="col-sm-4 col-lg-3 col-12">
+                <a href="blog">
+                    <div class="template_element_container blog_block d-flex justify-content-center align-items-center">
+                        <h2>Blog</h2>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
     
