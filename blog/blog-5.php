@@ -7,7 +7,7 @@ include('include/header.php');
 
 <div class="container-fluid">
     <div id="blog_5" class="row">
-        <div class="col-12 col-md-8 offset-md-2">
+        <div class="container">
             <h2 class="blog_h2 text-center">Recent Posts</h2>
 
             <!-- LHS RHS CONTAINER ROW -->

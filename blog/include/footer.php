@@ -14,6 +14,12 @@
             <a class="<?php echo ($page_name == 'blog-5.php'?'active': ''); ?>" href="blog-5.php">Blog 5</a>
             <a class="<?php echo ($page_name == 'blog-6.php'?'active': ''); ?>" href="blog-6.php">Blog 6</a>
             <a class="<?php echo ($page_name == 'blog-7.php'?'active': ''); ?>" href="blog-7.php">Blog 7</a>
+            <a class="<?php echo ($page_name == 'blog-8.php'?'active': ''); ?>" href="blog-8.php">Blog 8</a>
+            <a class="<?php echo ($page_name == 'blog-9.php'?'active': ''); ?>" href="blog-9.php">Blog 9</a>
+            <a class="<?php echo ($page_name == 'blog-10.php'?'active': ''); ?>" href="blog-10.php">Blog 10</a>
+            <a class="<?php echo ($page_name == 'blog-11.php'?'active': ''); ?>" href="blog-11.php">Blog 11</a>
+            <a class="<?php echo ($page_name == 'blog-12.php'?'active': ''); ?>" href="blog-12.php">Blog 12</a>
+            <a class="<?php echo ($page_name == 'blog-13.php'?'active': ''); ?>" href="blog-13.php">Blog 13</a>
             </div>
         
             <div class="browser_detect"><a href="../index.php" style="display: inline-flex; align-items:center; font-weight: bold; text-decoration: none;"><i class="material-icons" style="margin-right: 10px;">arrow_back</i> Back To Main page</a></div>
