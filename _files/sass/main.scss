@@ -112,6 +112,9 @@ a:hover {
     &.blog_block {
         background-color: $blog_block_color;
     }
+    &.testimonial_block {
+        background-color: $testimonial_block_color;
+    }
     
     
     &:hover {

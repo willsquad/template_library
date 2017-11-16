@@ -132,6 +132,13 @@
                     </div>
                 </a>
             </div>
+            <div class="col-sm-4 col-lg-3 col-12">
+                <a href="testimonials">
+                    <div class="template_element_container testimonial_block d-flex justify-content-center align-items-center">
+                        <h2>Testimonials</h2>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
     
