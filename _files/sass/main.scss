@@ -115,6 +115,9 @@ a:hover {
     &.testimonial_block {
         background-color: $testimonial_block_color;
     }
+    &.portfolio_block {
+        background-color: $portfolio_block_color;
+    }
     
     
     &:hover {

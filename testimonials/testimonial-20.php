@@ -54,7 +54,7 @@ include('include/header.php');
                             </p>
                         </div>
                         <div class="pic">
-                            <img src="../_files/images/profile/profile3.jpg" alt="">
+                            <img src="../_files/images/profile/profile5.jpg" alt="">
                         </div>
                         <h3 class="testimonial-title">June Doe</h3>
                         <span class="post">Twitter</span>
