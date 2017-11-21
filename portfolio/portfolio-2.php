@@ -2,7 +2,7 @@
 
 $title = 'Portfolio 2';
 include('include/header.php');
-/* #58 */
+
 ?>
 
 

@@ -118,6 +118,9 @@ a:hover {
     &.portfolio_block {
         background-color: $portfolio_block_color;
     }
+    &.team_block {
+        background-color: $team_block_color;
+    }
     
     
     &:hover {

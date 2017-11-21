@@ -2,7 +2,7 @@
 
 $title = 'Portfolio 3';
 include('include/header.php');
-/* #58 */
+
 ?>
 
 
@@ -20,7 +20,8 @@ include('include/header.php');
                             <div class="back portfolio_div portfolio_flip">
                                 <div class="portfolio_text portfolio_flip_text">
                                     <h3 class="portfolio_div_h3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint omnis saepe perspiciatis
-                                        iusto optio in rem minima illum animi assumenda.</h3>
+                                        iusto optio in rem minima illum animi assumenda.
+                                    </h3>
 
                                     <span class="view_more">View more
                                         <i class="fa fa-chevron-right"></i>
