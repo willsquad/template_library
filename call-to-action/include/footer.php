@@ -11,10 +11,7 @@
                 <a class="<?php echo ($page_name == 'call-to-action-2.php'?'active': ''); ?>" href="call-to-action-2.php">Call To Action 2</a>
                 <a class="<?php echo ($page_name == 'call-to-action-3.php'?'active': ''); ?>" href="call-to-action-3.php">Call To Action 3</a>
                 <a class="<?php echo ($page_name == 'call-to-action-4.php'?'active': ''); ?>" href="call-to-action-4.php">Call To Action 4</a>
-                <a class="<?php echo ($page_name == 'call-to-action-5.php'?'active': ''); ?>" href="call-to-action-5.php">Call To Action 5</a>
-                <a class="<?php echo ($page_name == 'call-to-action-6.php'?'active': ''); ?>" href="call-to-action-6.php">Call To Action 6</a>
-                <a class="<?php echo ($page_name == 'call-to-action-7.php'?'active': ''); ?>" href="call-to-action-7.php">Call To Action 7</a>
-                <a class="<?php echo ($page_name == 'call-to-action-8.php'?'active': ''); ?>" href="call-to-action-8.php">Call To Action 8</a>
+
             </div>
             
                 <div class="browser_detect"><a href="../index.php" style="display: inline-flex; align-items:center; font-weight: bold; text-decoration: none;"><i class="material-icons" style="margin-right: 10px;">arrow_back</i> Back To Main page</a></div>
