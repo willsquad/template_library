@@ -22,7 +22,6 @@ $(document).ready(function(){
     $('.slider_5_div').slick({
         prevArrow:'<i class="arrow_left fa fa-chevron-left"></i>',
         nextArrow:'<i class="arrow_right fa fa-chevron-right"></i>',
-        initialSlide: 1,
         dots:true,
         slidesToShow: 3,
         slidesToScroll: 3,

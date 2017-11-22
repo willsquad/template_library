@@ -10,6 +10,12 @@
             <a class="<?php echo ($page_name == 'team-2.php'?'active': ''); ?>" href="team-2.php">Team 2</a>
             <a class="<?php echo ($page_name == 'team-3.php'?'active': ''); ?>" href="team-3.php">Team 3</a>
             <a class="<?php echo ($page_name == 'team-4.php'?'active': ''); ?>" href="team-4.php">Team 4</a>
+            <a class="<?php echo ($page_name == 'team-5.php'?'active': ''); ?>" href="team-5.php">Team 5</a>
+            <a class="<?php echo ($page_name == 'team-6.php'?'active': ''); ?>" href="team-6.php">Team 6</a>
+            <a class="<?php echo ($page_name == 'team-7.php'?'active': ''); ?>" href="team-7.php">Team 7</a>
+            <a class="<?php echo ($page_name == 'team-8.php'?'active': ''); ?>" href="team-8.php">Team 8</a>
+            <a class="<?php echo ($page_name == 'team-9.php'?'active': ''); ?>" href="team-9.php">Team 9</a>
+            <a class="<?php echo ($page_name == 'team-10.php'?'active': ''); ?>" href="team-10.php">Team 10</a>
         </div>
 
         <div class="browser_detect">

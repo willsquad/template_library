@@ -241,7 +241,7 @@
             &.portfolio_text_div {
                 border: none;
                 height: 100%;
-                @include media-breakpoint-down(xs){
+                @include media-breakpoint-down(xs) {
                     min-height: auto;
                 }
             }
@@ -256,7 +256,7 @@
                 flex-direction: column;
                 align-items: flex-start;
                 justify-content: center;
-                @include media-breakpoint-down(xs){
+                @include media-breakpoint-down(xs) {
                     justify-content: flex-start;
                 }
             }
@@ -267,34 +267,33 @@
             .portfolio_p {
                 text-align: left;
             }
-            .portfolio_button{
+            .portfolio_button {
                 margin: 2em 0;
             }
         }
-        .portfolio_row{
+        .portfolio_row {
             display: flex;
         }
-        .portfolio_row:nth-child(odd){
+        .portfolio_row:nth-child(odd) {
             flex-direction: row-reverse;
         }
     }
     /**** Portfolio 4 ****/
-
     /**** Portfolio 5 ****/
 
     #portfolio_5 {
         background-color: #fff;
         padding: 4em 0;
         min-height: 30vh;
-        .portfolio_h2{
+        .portfolio_h2 {
             margin-bottom: 1em;
         }
-        .tab_filter_container{
+        .tab_filter_container {
             margin-bottom: 2em;
             display: flex;
             justify-content: center;
             align-items: center;
-            .tab_filter{
+            .tab_filter {
                 border-radius: 25px;
                 border: 1px solid #ccc;
                 font-size: 14px;
@@ -303,12 +302,12 @@
                 margin: 0px 8px;
                 outline: none;
                 cursor: pointer;
-                @include media-breakpoint-down(xs){
+                @include media-breakpoint-down(xs) {
                     padding: 2px 16px;
                     margin: 0px 5px;
                     font-size: 12px;
                 }
-                &.active{
+                &.active {
                     $active_color: #3F51B5;
                     border-color: $active_color;
                     color: $active_color;
@@ -316,8 +315,7 @@
             }
         }
         .portfolio_div {
-            border: 1px solid #ddd;
-            //min-height: 500px;
+            border: 1px solid #ddd; //min-height: 500px;
             margin-bottom: 30px;
             border-radius: 4px;
             position: relative;
@@ -337,11 +335,11 @@
                 justify-content: center;
                 text-align: center;
             }
-            .portfolio_div_h3{
+            .portfolio_div_h3 {
                 width: 65%;
                 margin: 0 auto;
             }
-            .more_icon{
+            .more_icon {
                 margin-top: 1em;
                 color: #444;
                 font-size: 1.5em;
@@ -350,102 +348,92 @@
         }
     }
     /**** Portfolio 5 ****/
-
-
     /***** Portfolio 6 *****/
 
-#portfolio_6 {
-    background-color: #fff;
-    min-height: 50vh;
-    padding: 4em 0em;
-
-    .arrow_left,
-    .arrow_right {
-        font-size: 1.5em !important;
-        cursor: pointer;
-    }
-    
-    .arrow_left {
-        float: left;
-        position: absolute;
-        top: 50%;
-        z-index: 10000;
-    }
-    
-    .arrow_right {
-        float: right;
-        position: absolute;
-        right: 0;
-        top: 50%;
-        z-index: 10000;
-    }
-
-    .portfolio_h2 {
-        text-align: center;
-        margin-bottom: 1em;
-    }
-    .portfolio_p {
-        width: 60%;
-        margin: 3em auto;
-        text-align: center;
-        @include media-breakpoint-down(sm) {
-            width: 100%;
+    #portfolio_6 {
+        background-color: #fff;
+        min-height: 50vh;
+        padding: 4em 0em;
+        .arrow_left,
+        .arrow_right {
+            font-size: 1.5em !important;
+            cursor: pointer;
         }
-    }
-    .portfolio_button {
-        margin: 0 auto;
-        display: block;
-    }
-    .video_container {
-        height: 400px;
-        background-color: #f7f7f7;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 85%;
-        margin: 0em auto 3em;
-        @include media-breakpoint-down(md) {
-            height: 250px;
-            margin-bottom: 2em;
-            width: 100%;
+        .arrow_left {
+            float: left;
+            position: absolute;
+            top: 50%;
+            z-index: 10000;
         }
-        i {
-            font-size: 3em;
-            color: #666;
+        .arrow_right {
+            float: right;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            z-index: 10000;
+        }
+        .portfolio_h2 {
+            text-align: center;
+            margin-bottom: 1em;
+        }
+        .portfolio_p {
+            width: 60%;
+            margin: 3em auto;
+            text-align: center;
             @include media-breakpoint-down(sm) {
-                font-size: 2em;
+                width: 100%;
+            }
+        }
+        .portfolio_button {
+            margin: 0 auto;
+            display: block;
+        }
+        .video_container {
+            height: 400px;
+            background-color: #f7f7f7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 85%;
+            margin: 0em auto 3em;
+            @include media-breakpoint-down(md) {
+                height: 250px;
+                margin-bottom: 2em;
+                width: 100%;
+            }
+            i {
+                font-size: 3em;
+                color: #666;
+                @include media-breakpoint-down(sm) {
+                    font-size: 2em;
+                }
+            }
+        }
+        .portfolio_6_div {
+            min-width: 0;
+            max-width: 100%;
+            .portfolio {
+                min-height: 30vh;
+                padding: 2em 4em;
+                outline: none;
+                @include media-breakpoint-down(sm) {
+                    padding: 2em;
+                }
             }
         }
     }
-    .portfolio_6_div {
-        min-width: 0;
-        max-width: 100%;
-        .portfolio {
-            min-height: 30vh;
-            padding: 2em 4em;
-            outline: none;
-            @include media-breakpoint-down(sm) {
-                padding: 2em;
-            }
-        }
-    }
-}
-
-
-/***** Portfolio 6 *****/
-
-/**** Portfolio 7 ****/
+    /***** Portfolio 6 *****/
+    /**** Portfolio 7 ****/
 
     #portfolio_7 {
         background-color: #fff;
         padding: 4em 0;
         min-height: 30vh;
-        .portfolio_h2{
+        .portfolio_h2 {
             margin-bottom: 2em;
         }
         .portfolio_div {
-            border: 1px solid #ddd;
-            //min-height: 500px;
+            border: 1px solid #ddd; //min-height: 500px;
             margin-bottom: 30px;
             border-radius: 4px;
             position: relative;
@@ -453,7 +441,7 @@
                 height: 200px;
                 background-color: #f4f4f4;
             }
-            .portfolio_info_container{
+            .portfolio_info_container {
                 height: 200px;
                 background-color: #fff;
             }
@@ -468,27 +456,27 @@
                 flex-direction: column;
                 justify-content: center;
                 text-align: center;
-                .item_star{
+                .item_star {
                     font-size: 2em;
                     margin-bottom: .5em;
                 }
             }
-            .portfolio_info_text{
+            .portfolio_info_text {
                 text-align: left;
                 padding: 2em;
-                .portfolio_div_h2{
+                .portfolio_div_h2 {
                     text-align: left;
                 }
-                .portfolio_p{
+                .portfolio_p {
                     font-size: 13px;
                     line-height: 1.5em;
                 }
             }
-            .portfolio_div_h3{
+            .portfolio_div_h3 {
                 width: 65%;
                 margin: 0 auto;
             }
-            .more_icon{
+            .more_icon {
                 margin-top: 1em;
                 color: #444;
                 font-size: 1.5em;

@@ -121,6 +121,9 @@ a:hover {
     &.team_block {
         background-color: $team_block_color;
     }
+    &.cta_block {
+        background-color: $cta_block_color;
+    }
     
     
     &:hover {

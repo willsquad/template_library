@@ -14,7 +14,7 @@ include('include/header.php');
                 <div class="col-12 col-sm-4 col-md-3">
                     <div class="team_div">
                         <div class="team_image">
-
+                            <i class="fa fa-user"></i>
                         </div>
                         <div class="team_text">
                             <h2 class="team_div_h2">Employee 1</h2>
@@ -25,7 +25,7 @@ include('include/header.php');
                 <div class="col-12 col-sm-4 col-md-3">
                     <div class="team_div">
                         <div class="team_image">
-
+                            <i class="fa fa-user"></i>
                         </div>
                         <div class="team_text">
                             <h2 class="team_div_h2">Employee 2</h2>
@@ -36,7 +36,7 @@ include('include/header.php');
                 <div class="col-12 col-sm-4 col-md-3">
                     <div class="team_div">
                         <div class="team_image">
-
+                            <i class="fa fa-user"></i>
                         </div>
                         <div class="team_text">
                             <h2 class="team_div_h2">Employee 3</h2>
@@ -47,7 +47,7 @@ include('include/header.php');
                 <div class="col-12 col-sm-4 col-md-3">
                     <div class="team_div">
                         <div class="team_image">
-
+                            <i class="fa fa-user"></i>
                         </div>
                         <div class="team_text">
                             <h2 class="team_div_h2">Employee 4</h2>
@@ -58,7 +58,7 @@ include('include/header.php');
                 <div class="col-12 col-sm-4 col-md-3">
                     <div class="team_div">
                         <div class="team_image">
-
+                            <i class="fa fa-user"></i>
                         </div>
                         <div class="team_text">
                             <h2 class="team_div_h2">Employee 5</h2>
@@ -69,7 +69,7 @@ include('include/header.php');
                 <div class="col-12 col-sm-4 col-md-3">
                     <div class="team_div">
                         <div class="team_image">
-
+                            <i class="fa fa-user"></i>
                         </div>
                         <div class="team_text">
                             <h2 class="team_div_h2">Employee 6</h2>
@@ -80,7 +80,7 @@ include('include/header.php');
                 <div class="col-12 col-sm-4 col-md-3">
                     <div class="team_div">
                         <div class="team_image">
-
+                            <i class="fa fa-user"></i>
                         </div>
                         <div class="team_text">
                             <h2 class="team_div_h2">Employee 7</h2>
@@ -91,7 +91,7 @@ include('include/header.php');
                 <div class="col-12 col-sm-4 col-md-3">
                     <div class="team_div">
                         <div class="team_image">
-
+                            <i class="fa fa-user"></i>
                         </div>
                         <div class="team_text">
                             <h2 class="team_div_h2">Employee 8</h2>
@@ -99,7 +99,7 @@ include('include/header.php');
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
