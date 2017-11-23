@@ -160,6 +160,13 @@
                     </div>
                 </a>
             </div>
+            <div class="col-sm-4 col-lg-3 col-12">
+                <a href="ecommerce">
+                    <div class="template_element_container ecommerce_block d-flex justify-content-center align-items-center">
+                        <h2>Ecommerce</h2>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
     

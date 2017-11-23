@@ -71,7 +71,7 @@ img {
         margin-bottom: .75em;
     }
     @include media-breakpoint-down(md) {
-        font-size: 1.5em;
+        font-size: 2em;
     }
 }
 
@@ -116,12 +116,12 @@ img {
     margin-right: 10px;
     cursor: pointer; //text-transform: uppercase;
     @include media-breakpoint-between(md, lg) {
-        padding: 8px 16px;
+        padding: 10px 20px;
         font-size: 14px;
     }
     @include media-breakpoint-down(md) {
-        padding: 8px 16px;
-        font-size: 12px;
+        padding: 10px 20px;
+        font-size: 14px;
     }
 }
 
@@ -221,5 +221,89 @@ img {
             opacity: 0.3;
         }
     }
+    .trusted_by{
+        font-family: lato;
+        font-size: 14px;
+    }
 }
 /******  cta 4 *******/
+
+/******  cta 5 *******/
+#cta_5{
+    background-color: #fff;
+    padding: 4em 0;
+    min-height: 30vh;
+    text-align: center;
+    .logos_div{
+        margin-top: 4em;
+        img{
+            width: 150px;
+            margin: 0em 2em;
+            filter: grayscale(100%);
+            opacity: 0.3;
+        }
+    }
+    .trusted_by{
+        font-family: lato;
+        font-size: 14px;
+    }
+}
+/******  cta 5 *******/
+
+/******  cta 6 *******/
+#cta_6{
+    background-color: #fff;
+    padding: 4em 0;
+    min-height: 30vh;
+    text-align: center;
+    .logos_div{
+        margin-top: 4em;
+        img{
+            width: 150px;
+            margin: 0em 2em;
+            filter: grayscale(100%);
+            opacity: 0.3;
+        }
+    }
+    .trusted_by{
+        font-family: lato;
+        font-size: 14px;
+    }
+    .cta_div{
+        background-color: #f7f7f7;
+        padding: 3em 0;
+    }
+}
+/******  cta 6 *******/
+
+
+/******  cta 7 *******/
+#cta_7{
+    background-color: #fff;
+    padding: 4em 0;
+    min-height: 30vh;
+    text-align: center;
+    .cta_p{
+        width: 75%;
+        margin: 0 auto 2.5em;
+        font-size: 18px;
+    }
+    .cta_div_h2{
+        font-size: 1.75em;
+    }
+    .option_check{
+        font-size: 3em;
+        margin-bottom: 1em;
+        @include media-breakpoint-down(sm){
+            font-size: 2em;
+        }
+    }
+    .cta_split_div{
+        margin-bottom: 5em;
+    }
+
+    .cta_h2{
+        margin-bottom: 2em;
+    }
+}
+/******  cta 7 *******/

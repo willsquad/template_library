@@ -1,0 +1,237 @@
+@import 'base/variables';
+@import 'base/bootstrap_variables';
+@import 'mixins/breakpoints';
+body {
+    background-color: #f4f4f4; //overflow-y: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+.browser_detect {
+    padding: 15px;
+    font-family: lato;
+    font-size: 12px;
+    margin-top: 2em;
+}
+
+
+/****** ALL LANDINGS Navigation *******/
+
+.header_collection_body {
+    height: calc(100vh - 200px);
+    z-index: -1;
+}
+
+.header_collection_body h1 {
+    font-family: agency fb;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.header_collection_list a.active {
+    background-color: $content_block_color;
+    color: #fff;
+}
+
+.header_collection_list a {
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    border-top: 1px solid #ccc;
+}
+
+
+/****** ALL LANDINGS Navigation *******/
+
+.ecommerce_h2 {
+    font-family: "roboto slab";
+    letter-spacing: -2px;
+    font-size: 2.25em;
+    font-weight: 300;
+    margin-bottom: .75em;
+    word-spacing: 4px;
+    @include media-breakpoint-between(md, lg) {
+        font-size: 2.25em;
+        margin-bottom: .75em;
+    }
+    @include media-breakpoint-down(md) {
+        font-size: 1.5em;
+    }
+}
+
+.ecommerce_div_h2 {
+    font-family: "source sans pro";
+    font-weight: 300;
+    //text-align: center;
+    font-size: 2.617924em;
+    line-height: 1.214;
+    letter-spacing: -1px;
+    margin-bottom: .5em;
+    margin-top: .5em;
+    @include media-breakpoint-down(md) {
+        font-size: 1.75em;
+    }
+}
+
+.ecommerce_p {
+    font-size: 15px;
+    font-family: roboto;
+    line-height: 1.75em;
+    font-weight: 300;
+}
+
+.ecommerce_button {
+    padding: 14px 26px;
+    font-size: 14px;
+    background: #2196f3;
+    border: none;
+    outline: none !important;
+    color: #fff;
+    font-family: montserrat;
+    margin-right: 10px;
+    cursor: pointer; //text-transform: uppercase;
+    @include media-breakpoint-between(md, lg) {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    @include media-breakpoint-down(md) {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+    display: inline-block;
+    margin: 2em auto 0em;
+}
+
+
+/***** Ecommerce 1 *****/
+#ecommerce_1{
+    padding: 4em 0;
+    background-color: #fff;
+    min-height: 30vh;
+    .product_image_div{
+        height: 600px;
+        background-color: #f4f4f4;
+        width: 100%;
+        @include media-breakpoint-down(sm){
+            height: 400px;
+        }
+    }
+    .star_rating{
+        margin-bottom: .5em;
+        color:goldenrod;
+        font-size: 1.1em;
+    }
+    .product_price{
+        font-size: 1.75em;
+        margin: 2em 0;
+        font-family: "source sans pro";
+    }
+    .ecommerce_p{
+        font-size: 1.1em;
+        font-family: "source sans pro";
+        line-height: 1.75em;
+        font-weight: 400;
+        line-height: 1.618;
+    }
+    .button_container{
+        margin-top: 4em;
+        .add_to_cart_button{
+            background-color: #fbfbfb;
+            outline: none;
+            border:1px solid #ccc;
+            font-family: "source sans pro";
+            font-weight: bold;
+            font-size: 18px;
+
+            padding: 10px 40px;
+            outline: none;
+            transition: all .3s;
+            border-radius: 30px;
+            border: 1px solid #eee;
+            margin: 10px;
+            background: #f4f4f4;
+        }
+        .buy_now_button{
+            background-color: #333;
+            color:#f4f4f4;
+        }
+    }
+    .product_thumbnails{
+        margin-top: 15px;
+        margin-bottom: 2em;
+        .thumbnail{
+            height: 80px;
+            background-color: #f4f4f4;
+        }
+    }
+}
+/***** Ecommerce 1 *****/
+
+/***** Ecommerce 2 *****/
+#ecommerce_2{
+    padding: 4em 0;
+    background-color: #fff;
+    min-height: 30vh;
+    .product_image_div{
+        height: 600px;
+        background-color: #f4f4f4;
+        width: 100%;
+        margin-bottom: 2em;
+        @include media-breakpoint-down(sm){
+            height: 400px;
+        }
+    }
+    .star_rating{
+        margin-bottom: .5em;
+        color:goldenrod;
+        font-size: 1.1em;
+    }
+    .product_price{
+        font-size: 1.75em;
+        margin: 2em 0;
+        font-family: "source sans pro";
+    }
+    .ecommerce_p{
+        font-size: 1.1em;
+        font-family: "source sans pro";
+        line-height: 1.75em;
+        font-weight: 400;
+        line-height: 1.618;
+    }
+    .button_container{
+        margin-top: 4em;
+        .add_to_cart_button{
+            background-color: #fbfbfb;
+            outline: none;
+            border:1px solid #ccc;
+            font-family: "source sans pro";
+            font-weight: bold;
+            font-size: 18px;
+
+            padding: 10px 40px;
+            outline: none;
+            transition: all .3s;
+            border-radius: 30px;
+            border: 1px solid #eee;
+            margin: 10px;
+            background: #f4f4f4;
+        }
+        .buy_now_button{
+            background-color: #333;
+            color:#f4f4f4;
+        }
+    }
+    .product_thumbnails{
+        margin-bottom: 15px;
+        .thumbnail{
+            height: 80px;
+            background-color: #f4f4f4;
+        }
+    }
+}
+/***** Ecommerce 2 *****/

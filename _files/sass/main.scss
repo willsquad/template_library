@@ -124,6 +124,9 @@ a:hover {
     &.cta_block {
         background-color: $cta_block_color;
     }
+    &.ecommerce_block {
+        background-color: $ecommerce_block_color;
+    }
     
     
     &:hover {
