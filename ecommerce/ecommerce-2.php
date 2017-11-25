@@ -1,6 +1,6 @@
 <?php 
 
-$title = 'Ecommerce 1';
+$title = 'Ecommerce 2';
 include('include/header.php');
 
 ?>

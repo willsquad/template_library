@@ -9,6 +9,9 @@
             <div class="header_collection_list d-flex flex-wrap">
                 <a class="<?php echo ($page_name == 'index.php'?'active': ''); ?>"  href="index.php">Ecommerce 1</a>
                 <a class="<?php echo ($page_name == 'ecommerce-2.php'?'active': ''); ?>" href="ecommerce-2.php">Ecommerce 2</a>
+                <a class="<?php echo ($page_name == 'ecommerce-3.php'?'active': ''); ?>" href="ecommerce-3.php">Ecommerce 3</a>
+                <a class="<?php echo ($page_name == 'ecommerce-4.php'?'active': ''); ?>" href="ecommerce-4.php">Ecommerce 4</a>
+                <a class="<?php echo ($page_name == 'ecommerce-5.php'?'active': ''); ?>" href="ecommerce-5.php">Ecommerce 5</a>
             </div>
             
                 <div class="browser_detect"><a href="../index.php" style="display: inline-flex; align-items:center; font-weight: bold; text-decoration: none;"><i class="material-icons" style="margin-right: 10px;">arrow_back</i> Back To Main page</a></div>

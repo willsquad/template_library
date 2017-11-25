@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../_files/css/ecommerce.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Ubuntu|Source+Sans+Pro:300,400,600|Roboto:300,500|Roboto+Slab|Montserrat:300,700|Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Ubuntu|Source+Sans+Pro:300,400,600|Roboto:300,500|Roboto+Slab|Montserrat:300,700|Oswald:400,500,600|Comfortaa:400,700" rel="stylesheet">
     
   </head>
   <body>
