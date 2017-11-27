@@ -127,6 +127,9 @@ a:hover {
     &.ecommerce_block {
         background-color: $ecommerce_block_color;
     }
+    &.article_block {
+        background-color: $article_block_color;
+    }
     
     
     &:hover {

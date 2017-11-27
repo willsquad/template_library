@@ -22,7 +22,7 @@ include('include/header.php');
                     <div class="product_info_div">
                         <h2 class="ecommerce_div_h2">Awesome Product Name</h2>
                         <h2 class="ecommerce_div_h2 category">Category Name</h2>
-                       <!--  <div class="star_rating">
+                        <!--  <div class="star_rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -37,15 +37,15 @@ include('include/header.php');
                         </div>
                         <p class="ecommerce_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi illum aut suscipit pariatur! Et
                             distinctio, explicabo excepturi beatae blanditiis dolorum voluptatum pariatur esse reprehenderit
-                            ab.</p>
+                            ab.
+                        </p>
 
-                            <div class="product_price">
+                        <div class="product_price">
                             $5.99
                         </div>
 
                         <div class="free_delivery">
-                            <hr>
-                            Free Delivery on all orders above $25
+                            <hr> Free Delivery on all orders above $25
                             <hr>
                         </div>
 
