@@ -1,15 +1,18 @@
 <?php 
 
-$title = 'Article 1';
+$title = 'Article 6';
 include('include/header.php');
 /** #16  **/
 ?>
 
 <div class="container-fluid">
-    <div id="article_1" class="row">
+    <div id="article_6" class="row">
         <div class="article_container col-12 col-md-10 offset-md-1 col-xl-8 offset-xl-2">
             <h3 class="latest_posts_h3">Latest posts</h3>
             <div class="line_border"></div>
+            <div class="article_image">
+                
+            </div>
             <div class="article_row col-12 col-md-10 offset-md-1">
                 <div class="row">
                     <div class="col-12 col-md-3 date_container">

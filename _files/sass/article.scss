@@ -71,7 +71,7 @@ img {
     font-size: 1.25em;
     font-weight: 300;
     margin-bottom: 0em;
-    line-height: 1.25em;
+    line-height: 1.5em;
 }
 
 .blog_p {
@@ -124,6 +124,12 @@ img {
     word-spacing: 2px;
 }
 
+.article_image {
+    min-height: 60vh;
+    background-color: #f4f4f4;
+    width: 100%;
+}
+
 /**** Article 1 ****/
 #article_1{
     background: #fff;
@@ -149,14 +155,7 @@ img {
     .article_row{
         margin-top: 5em;
     }
-    .article_date{
-        font-size: 5em;
-        font-family: "roboto slab";
-        color: red;
-    }
-    .article_month_year{
-        text-transform: uppercase;
-    }
+   
     .article_h2{
         font-family: montserrat;
         text-transform: uppercase;
@@ -177,6 +176,38 @@ img {
         padding: 12px 30px;
         background: #E91E63;
     }
+    .date_container{
+        border-right: 1px solid #ccc;
+        text-align: right;
+        padding-right: 2em;
+        @include media-breakpoint-down(sm){
+            text-align: left;
+            border-right: none;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 1.5em;
+        }
+        .article_date{
+            font-size: 5em;
+            font-family: "roboto slab";
+            color: red;
+            @include media-breakpoint-down(md){
+                font-size: 4em;
+            }
+        }
+        .article_month_year{
+            text-transform: uppercase;
+        }
+        @include media-breakpoint-down(sm){
+            margin-bottom: 2em;
+        }
+    }
+
+    .content_container{
+        padding-left: 4em;
+        @include media-breakpoint-down(sm){
+            padding-left: 0em;
+        }
+    }
 }
 /**** Article 1 ****/
 
@@ -192,10 +223,12 @@ img {
             font-size: 12px;
         }
         .article_h2{
-            font-size: 2em;
             text-align: center;
             width: 60%;
             margin: 1em auto;
+            font-family: montserrat;
+            text-transform: uppercase;
+            font-size: 2.5em;
             @include media-breakpoint-down(sm){
                 width: 100%;
                 text-align: left;
@@ -203,7 +236,8 @@ img {
         }
         .blog_button{
             display: block;
-            margin:3em auto;
+            margin:4em auto 2em;
+            
         }
         p.article_excerpt{
             font-family: lato;
@@ -217,15 +251,496 @@ img {
         }
         div.article_excerpt{
             font-family: lato;
-            text-align: justify;
-            margin-top: 4em;
-            -webkit-column-count: 2;
+            text-align: center;
+            margin-top: 3em;
+            /* -webkit-column-count: 2;
             -moz-column-count: 2;
-            column-count: 2;
-            column-gap: 75px;
+            /* column-count: 2;
+            column-gap: 75px; */
+            font-size: 20px;
+            line-height: 32px;
             @include media-breakpoint-down(sm){
                 column-count: initial;
             }
         }
+        .article_author{
+            color: #888;
+            font-size: 14px;
+            margin: 2em 0 5em;
+            text-align: center;
+        }
     }
-    /**** Article 2 ****/
+/**** Article 2 ****/
+
+/**** Article 3 ****/
+#article_3{
+    $main_div_height: 600px;
+    $main_padding: 15px;
+
+    
+    background: #fff;
+    min-height: 30vh;
+    padding: 3em 0em;
+
+    .article_container{
+        padding: 4em 1em;
+        box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    }
+
+    .article_h2{
+        text-align: center;
+        width: 90%;
+        margin: 1em auto;
+        font-family: montserrat;
+        text-transform: uppercase;
+        font-size: 2.5em;
+        @include media-breakpoint-down(sm){
+            width: 100%;
+            text-align: left;
+        }
+    }
+    .user_pic_name{
+        display: flex;
+        align-items: center;
+        margin-bottom: 5em;
+        justify-content: center;
+        @include media-breakpoint-down(sm){
+            justify-content: flex-start;
+        }
+        &>div{
+            display: inline-block;
+            margin-right: $main_padding;
+        }
+        .user_pic{
+            width:50px;
+            height: 50px;
+            border-radius: 25px;
+            background-color: #F7F7F7;
+            border:1px solid #ccc;
+        }
+    }
+    .blog_rhs_div{
+        min-height:$main_div_height/2;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: $main_padding*2;
+        margin-bottom: $main_padding*2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .article_h2{
+            font-size: 1.25em;
+            width: 100%;
+            text-align: left;
+            margin-top: 0px;
+        }
+        .article_date{
+            font-size: 12px;
+        }
+        
+        .article_excerpt{
+            font-family: lato;
+            font-weight: 300;
+            font-size: 14px;
+            color: #777;
+        }
+    }
+
+    .blog_12_rhs{
+        .article_date{
+            font-size: 12px;
+        }
+        p.article_excerpt{
+            font-family: lato;
+            text-align: center;
+            width: 60%;
+            margin: 0 auto;
+            @include media-breakpoint-down(sm){
+                width: 100%;
+                text-align: left;
+            }
+        }
+        div.article_excerpt{
+            font-family: lato;
+            text-align: left;
+            padding: 0em 6em 0em 2em;
+            font-family: "roboto slab";
+            font-size: 16px;
+            line-height: 28px;
+            @include media-breakpoint-down(sm){
+                padding: 0em;
+            }
+            .article_h2{
+                text-align: left;
+                font-size: 1.45em;
+                width: 60%;
+                margin-left: 0;
+                margin: 2em 0em;
+                line-height: 1.5em;
+            }
+        }
+    }
+    
+    
+}
+/**** Article 3 ****/
+
+/**** Article 4 ****/
+#article_4{
+    $main_div_height: 600px;
+    $main_padding: 15px;
+
+    background: #fff;
+    min-height: 30vh;
+    padding: 0em 0em 3em;
+
+    .blog_main_image{
+        background-color: #f7f7f7;
+        min-height: 60vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3em;
+        padding: 2em;
+    }
+    .article_h2{
+        font-size: 2.5em;
+        text-align: center;
+        width: 60%;
+        margin: 1em auto;
+        margin-bottom: 1em;
+        font-family: montserrat;
+        text-transform: uppercase;
+        @include media-breakpoint-down(sm){
+            width: 100%;
+            text-align: left;
+            font-size: 2em;
+        }
+    }
+    .user_pic_name{
+        display: flex;
+        align-items: center;
+        margin-bottom: 5em;
+        justify-content: center;
+        @include media-breakpoint-down(sm){
+            align-self: flex-start;
+        }
+        &>div{
+            display: inline-block;
+            margin-right: $main_padding;
+        }
+        .user_pic{
+            width:50px;
+            height: 50px;
+            border-radius: 25px;
+            background-color: #999;
+            border:1px solid #ccc;
+        }
+    }
+
+    .blog_rhs{
+        -webkit-column-count: 2; /* Chrome, Safari, Opera */
+        -moz-column-count: 2; /* Firefox */
+        column-count: 2;
+        column-gap: 75px;
+        @include media-breakpoint-down(sm){
+            column-count: initial;
+        }
+        div.article_excerpt{
+            font-family: lato;
+            text-align: left;
+            font-size: 20px;
+            line-height: 1.75em;
+            //padding: 0em 6em 0em 2em;
+            @include media-breakpoint-down(sm){
+                padding: 0em;
+            }
+            .article_h2{
+                text-align: left;
+                font-size: 1.45em;
+                width: 60%;
+                margin-left: 0;
+                margin: 2em auto;
+                line-height: 1.5em;
+                font-weight: bold;
+            }
+        }
+    }
+    
+    
+}
+/**** Article 4 ****/
+
+/**** Article 5 ****/
+#article_5{
+    $main_div_height: 600px;
+    $main_padding: 15px;
+
+    background: #F7F7F5;
+    min-height: 30vh;
+    padding: 0em 0em 3em;
+
+    .blog_main_image{
+        background-color: #fff;
+        /* min-height: 60vh; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10em;
+        padding: 2em 2em 0em;
+    }
+    .article_h2{
+        font-size: 2.5em;
+        text-align: center;
+        width: 60%;
+        margin: 1em auto;
+        margin-bottom: -1em;
+        font-family: montserrat;
+        text-transform: uppercase;
+        @include media-breakpoint-down(sm){
+            width: 100%;
+            text-align: left;
+            font-size: 2em;
+        }
+    }
+    .user_pic_name{
+        display: flex;
+        align-items: center;
+        margin-bottom: 0em;
+        flex-direction: column;
+        position: relative;
+        top: 90px;
+        @include media-breakpoint-down(sm){
+            /* align-self: flex-start; */
+        }
+        &>div{
+            display: inline-block;
+        }
+        .user_pic{
+            width: 150px;
+            height: 150px;
+            border-radius: 100px;
+            background-color: #999;
+            /* border: 1px solid #ccc; */
+            border: 4px solid #fff;
+            @include media-breakpoint-down(sm){
+                /* align-self: flex-start; */
+                width: 125px;
+                height: 125px;
+                border-radius: 100px;
+            }
+        }
+    }
+
+    .blog_rhs{
+        div.article_excerpt{
+            font-family: lato;
+            text-align: left;
+            font-size: 20px;
+            line-height: 1.75em;
+            //padding: 0em 6em 0em 2em;
+            @include media-breakpoint-down(sm){
+                padding: 0em;
+            }
+            .article_h2{
+                text-align: center;
+                font-size: 1.4em;
+                width: 60%;
+                margin-left: 0;
+                margin: 1em auto;
+                line-height: 1.5em;
+                font-weight: bold;
+                /* font-family: "roboto slab";
+                text-transform: capitalize; */
+                @include media-breakpoint-down(sm){
+                    font-size: 1.25em;
+                }
+            }
+        }
+    }
+    
+    
+}
+/**** Article 5 ****/
+
+
+/**** Article 6 ****/
+#article_6{
+    background: #fff;
+    min-height: 30vh;
+    padding: 3em 1em;
+    .article_container{
+        //box-shadow:0 0 10px rgba(0, 0, 0, 0.25);
+        padding: 4em 2em;
+    }
+    .article_image{
+        width: 100%;
+        min-height: 60vh;
+        background-color: #f5f5f5;
+        @include media-breakpoint-down(sm){
+            min-height: 30vh;
+        }
+    }
+    .latest_posts_h3{
+        text-align: center;
+        font-family: montserrat;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .line_border{
+        width: 50px;
+        height: 2px;
+        margin: 2em auto 3em;
+        background: #ccc;
+    }
+    .article_row{
+        margin-top: 4em;
+    }
+   
+    .article_h2{
+        font-family: montserrat;
+        text-transform: uppercase;
+        font-size: 2em;
+        line-height: 1.5em;
+    }
+    .article_author{
+        color: #888;
+        font-size: 14px;
+        margin: 2em 0;
+    }
+    .article_excerpt {
+        font-family: "roboto slab";
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .blog_button {
+        padding: 12px 30px;
+        background: #E91E63;
+    }
+    .date_container{
+        border-right: 1px solid #ccc;
+        text-align: right;
+        padding-right: 2em;
+        @include media-breakpoint-down(sm){
+            text-align: left;
+            border-right: none;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 1.5em;
+        }
+        .article_date{
+            font-size: 5em;
+            font-family: "roboto slab";
+            color: red;
+            @include media-breakpoint-down(md){
+                font-size: 4em;
+            }
+        }
+        .article_month_year{
+            text-transform: uppercase;
+        }
+        @include media-breakpoint-down(sm){
+            margin-bottom: 2em;
+        }
+    }
+
+    .content_container{
+        padding-left: 4em;
+        @include media-breakpoint-down(sm){
+            padding-left: 0em;
+        }
+    }
+}
+/**** Article 6 ****/
+
+/**** Article 7 ****/
+#article_7{
+    background: #fff;
+    min-height: 30vh;
+    padding: 3em 1em;
+    .article_container{
+        //box-shadow:0 0 10px rgba(0, 0, 0, 0.25);
+        padding: 4em 2em;
+    }
+    .article_image{
+        width: 100%;
+        min-height: 60vh;
+        background-color: #f5f5f5;
+        @include media-breakpoint-down(sm){
+            min-height: 30vh;
+        }
+    }
+    .latest_posts_h3{
+        text-align: center;
+        font-family: montserrat;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .line_border{
+        width: 50px;
+        height: 2px;
+        margin: 2em auto 3em;
+        background: #ccc;
+    }
+    .article_row{
+        margin-top: 3em;
+    }
+   
+    .article_h2{
+        font-family: bangers;
+        text-transform: uppercase;
+        font-size: 3.5em;
+        line-height: 1.1em;
+        @include media-breakpoint-down(sm){
+            font-size: 2.5em;
+        }
+    }
+    .article_author{
+        color: #888;
+        font-size: 14px;
+        margin: 2em 0;
+    }
+    .article_excerpt {
+        font-family: roboto;
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 1.5em;
+    }
+    .blog_button {
+        padding: 12px 30px;
+        background: #F44336;
+        margin-top: 4em;
+    }
+    .date_container{
+        border-right: 1px solid #ccc;
+        text-align: right;
+        padding-right: 2em;
+        @include media-breakpoint-down(sm){
+            text-align: left;
+            border-right: none;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 1.5em;
+        }
+        .article_date{
+            font-size: 5em;
+            font-family: "roboto slab";
+            color: red;
+            @include media-breakpoint-down(md){
+                font-size: 4em;
+            }
+        }
+        .article_month_year{
+            text-transform: uppercase;
+        }
+        @include media-breakpoint-down(sm){
+            margin-bottom: 2em;
+        }
+    }
+
+}
+/**** Article 7 ****/

@@ -12,6 +12,8 @@
             <a class="<?php echo ($page_name == 'article-3.php'?'active': ''); ?>" href="article-3.php">Article 3</a>
             <a class="<?php echo ($page_name == 'article-4.php'?'active': ''); ?>" href="article-4.php">Article 4</a>
             <a class="<?php echo ($page_name == 'article-5.php'?'active': ''); ?>" href="article-5.php">Article 5</a>
+            <a class="<?php echo ($page_name == 'article-6.php'?'active': ''); ?>" href="article-6.php">Article 6</a>
+            <a class="<?php echo ($page_name == 'article-7.php'?'active': ''); ?>" href="article-7.php">Article 7</a>
             </div>
         
             <div class="browser_detect"><a href="../index.php" style="display: inline-flex; align-items:center; font-weight: bold; text-decoration: none;"><i class="material-icons" style="margin-right: 10px;">arrow_back</i> Back To Main page</a></div>
