@@ -16,6 +16,7 @@ include('include/header.php');
             <div class="article_row col-12 col-md-10 offset-md-1">
                 <div class="row">
                     <div class="col-12 col-md-3 date_container">
+                        <div class="date_container__date_circle"></div>
                         <div class="article_date">
                             27
                         </div>
