@@ -130,6 +130,9 @@ a:hover {
     &.article_block {
         background-color: $article_block_color;
     }
+    &.results_block {
+        background-color: $results_block_color;
+    }
     
     
     &:hover {

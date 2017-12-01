@@ -10,7 +10,7 @@ include('include/header.php');
         <div class="article_container col-12 col-md-10 offset-md-1 col-xl-8 offset-xl-2">
             <div class="article_row col-12">
                 <div class="article_row__top">
-                    <div class="row">
+                    <div class="row no-gutters">
                         <div class="col-12 col-md-2 article_row__top__date">
                             <div class="article_date">
                                 27
