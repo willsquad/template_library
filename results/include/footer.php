@@ -8,6 +8,9 @@
         <div class="header_collection_list d-flex flex-wrap">
             <a class="<?php echo ($page_name == 'index.php'?'active': ''); ?>" href="index.php">Results 1</a>
             <a class="<?php echo ($page_name == 'results-2.php'?'active': ''); ?>" href="results-2.php">Results 2</a>
+            <a class="<?php echo ($page_name == 'results-3.php'?'active': ''); ?>" href="results-3.php">Results 3</a>
+            <a class="<?php echo ($page_name == 'results-4.php'?'active': ''); ?>" href="results-4.php">Results 4</a>
+            <a class="<?php echo ($page_name == 'results-5.php'?'active': ''); ?>" href="results-5.php">Results 5</a>
         </div>
 
         <div class="browser_detect">
