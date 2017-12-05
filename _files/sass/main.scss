@@ -133,6 +133,9 @@ a:hover {
     &.results_block {
         background-color: $results_block_color;
     }
+    &.vertical_nav_block {
+        background-color: $vertical_nav_block_color;
+    }
     
     
     &:hover {

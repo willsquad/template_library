@@ -181,6 +181,13 @@
                     </div>
                 </a>
             </div>
+            <div class="col-sm-4 col-lg-3 col-12">
+                <a href="vertical-nav">
+                    <div class="template_element_container vertical_nav_block d-flex justify-content-center align-items-center">
+                        <h2>Vertical Nav</h2>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
     

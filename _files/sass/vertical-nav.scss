@@ -1,0 +1,340 @@
+@import 'base/variables';
+@import 'base/bootstrap_variables';
+@import 'mixins/breakpoints';
+body {
+    background-color: #f4f4f4; //overflow-y: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+.browser_detect {
+    padding: 15px;
+    font-family: lato;
+    font-size: 12px;
+    margin-top: 2em;
+}
+
+
+/****** ALL LANDINGS Navigation *******/
+
+.header_collection_body {
+    height: calc(100vh - 200px);
+    //z-index: -1;
+}
+
+.header_collection_body h1 {
+    font-family: agency fb;
+    font-weight: bold;
+    font-size: 45px;
+
+}
+
+.header_collection_list a.active {
+    background-color: $vertical_nav_block_color;
+    color: #fff;
+}
+
+.header_collection_list a {
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    border-top: 1px solid #ccc;
+}
+
+
+/****** ALL LANDINGS Navigation *******/
+
+/**** Vertical Navigation 1  ****/
+.landing_page_content{
+    background: url(../images/office.jpg) no-repeat;
+    height: 100vh;
+}
+#vertical_nav_1{
+    //width: 300px;
+    height: 100vh;
+    background-color: #393939;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    padding: 3em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 20px #333;
+    .logo{
+        width: 125px;
+    }
+    .menu_items_container{
+        margin-top: 3em;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        a{
+            width: 100%;
+            padding: 30px 15px;
+            background-color: #444;
+            //text-align: center;
+            font-family: montserrat;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+            border-bottom: 1px solid #333;
+            padding-left: 3em;
+            transition: all 0.3s ease;
+            &:hover{
+                background-color: #535353;
+            }
+            &.active{
+                background-color: #535353;
+            }
+        }
+    }
+}
+/**** Vertical Navigation 1  ****/
+
+
+/**** Vertical Navigation 2  ****/
+.landing_page_content{
+    background: url(../images/office.jpg) no-repeat;
+    height: 100vh;
+}
+#vertical_nav_2{
+    //width: 300px;
+    height: 100vh;
+    background-color: rgba(23, 23, 23, 0.75);
+    position: fixed;
+    left: 30px;
+    top: 0;
+    z-index: 100;
+    padding: 3em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include media-breakpoint-down(sm){
+        left:0;
+    }
+    .logo{
+        width: 125px;
+    }
+    .menu_items_container{
+        margin-top: 3em;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        a{
+            width: 100%;
+            padding: 30px 15px;
+            background-color: rgba(23, 23, 23, 0.75);
+            //text-align: center;
+            font-family: montserrat;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+            border-bottom: 1px solid #333;
+            padding-left: 3em;
+            transition: all 0.3s ease;
+            &:hover{
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+            &.active{
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+        }
+    }
+}
+/**** Vertical Navigation 2  ****/
+
+/**** Vertical Navigation 3  ****/
+.landing_page_content{
+    background: url(../images/office.jpg) no-repeat;
+    height: 100vh;
+}
+
+#vertical_nav_3{
+    //width: 300px;
+    height: 100vh;
+    background-color: #FFFFFF;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    padding: 3em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 20px #999;
+    .logo{
+        width: 250px;
+    }
+    .menu_items_container{
+        margin-top: 3em;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        a{
+            width: 95%;
+            padding: 30px 15px;
+            background-color: #fff;
+            text-align: center;
+            font-family: montserrat;
+            color: #b7b7b7;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            transition: all 0.3s ease;
+            &:hover{
+                background-color: #FBBE5D;
+                color: #333;
+            }
+            &.active{
+                background-color: #FBBE5D;
+                color: #333;
+            }
+        }
+    }
+}
+/**** Vertical Navigation 3  ****/
+
+
+/**** Vertical Navigation 4  ****/
+.landing_page_content{
+    background: url(../images/office.jpg) no-repeat;
+    height: 100vh;
+}
+
+#vertical_nav_4{
+    //width: 300px;
+    height: 100vh;
+    background-color: #FFFFFF;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    padding: 3em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 20px #999;
+    .logo{
+        width: 100px;
+    }
+    .menu_items_container{
+        margin-top: 5em;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        a{
+            width: 95%;
+            padding: 10px;
+            text-align: center;
+            font-family: montserrat;
+            color: #b7b7b7;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            transition: all 0.3s ease;
+            &:hover{
+                color: #333;
+            }
+            &.active{
+                color: #333;
+            }
+        }
+    }
+}
+/**** Vertical Navigation 4  ****/
+
+
+/**** Vertical Navigation 5  ****/
+.landing_page_content{
+    background: url(../images/office.jpg) no-repeat;
+    height: 100vh;
+}
+
+#vertical_nav_5{
+    //width: 300px;
+    height: 100vh;
+    background-color: #FFFFFF;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    padding: 3em 0;
+    display: flex;
+    flex-direction: column;
+    //align-items: center;
+    box-shadow: 0 0 20px #999;
+    justify-content: space-between;
+    .logo{
+        padding-left: 30px;
+        width: 150px;
+    }
+    .menu_items_container{
+        margin-top: 5em;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        a{
+            width: 100%;
+            padding: 10px;
+            //text-align: center;
+            font-family: montserrat;
+            color: #333;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            transition: all 0.3s ease;
+            padding-left: 30px;
+            &:hover{
+                color: #333;
+            }
+            &.active{
+                color: #333;
+                display: flex;
+                flex-direction: column;
+                &::after {
+                    content: '';
+                    width: 30px;
+                    height: 2px;
+                    background: #333;
+                    margin-top: 0px;
+                }
+            }
+        }
+        .search_div{
+            position: relative;
+            margin-top: 2em;
+            .search_icon{
+                position: absolute;
+                top: 15px;
+                left: 15px;
+            }
+            input{
+                border-radius: 100px;
+                padding: 10px;
+                border:1px solid #ccc;
+                outline: none;
+                background: #f7f7f7;
+                padding-left: 40px;
+            }
+        }
+    }
+}
+/**** Vertical Navigation 5  ****/
