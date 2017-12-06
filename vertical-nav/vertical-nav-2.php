@@ -1,6 +1,6 @@
 <?php 
 
-$title = 'Vertical Nav 1';
+$title = 'Vertical Nav 2';
 include('include/header.php');
 
 ?>

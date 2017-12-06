@@ -11,8 +11,11 @@
             <a class="<?php echo ($page_name == 'vertical-nav-3.php'?'active': ''); ?>" href="vertical-nav-3.php">Vertical 3</a>
             <a class="<?php echo ($page_name == 'vertical-nav-4.php'?'active': ''); ?>" href="vertical-nav-4.php">Vertical 4</a>
             <a class="<?php echo ($page_name == 'vertical-nav-5.php'?'active': ''); ?>" href="vertical-nav-5.php">Vertical 5</a>
-            <!-- <a class="< ?php echo ($page_name == 'vertical-nav-6.php'?'active': ''); ?>" href="vertical-nav-6.php">Vertical 6</a>
-            <a class="< ?php echo ($page_name == 'vertical-nav-7.php'?'active': ''); ?>" href="vertical-nav-7.php">Vertical 7</a> -->
+            <a class="<?php echo ($page_name == 'vertical-nav-6.php'?'active': ''); ?>" href="vertical-nav-6.php">Vertical 6</a>
+            <a class="<?php echo ($page_name == 'vertical-nav-7.php'?'active': ''); ?>" href="vertical-nav-7.php">Vertical 7</a>
+            <a class="<?php echo ($page_name == 'vertical-nav-8.php'?'active': ''); ?>" href="vertical-nav-8.php">Vertical 8</a>
+            <a class="<?php echo ($page_name == 'vertical-nav-9.php'?'active': ''); ?>" href="vertical-nav-9.php">Vertical 9</a>
+            <a class="<?php echo ($page_name == 'vertical-nav-10.php'?'active': ''); ?>" href="vertical-nav-10.php">Vertical 10</a>
         </div>
 
         <div class="browser_detect">
