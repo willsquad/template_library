@@ -136,6 +136,9 @@ a:hover {
     &.vertical_nav_block {
         background-color: $vertical_nav_block_color;
     }
+    &.mobile_nav_block {
+        background-color: $mobile_nav_block_color;
+    }
     
     
     &:hover {
