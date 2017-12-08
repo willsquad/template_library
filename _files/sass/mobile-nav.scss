@@ -49,7 +49,7 @@ img {
     max-height: 854px;
     //min-height: 854px;
     border: 1px solid #ccc;
-    margin: 2em auto;
+    margin: 0em auto 2em;
     background-color: #fbfbfb;
     overflow-y: auto;
     overflow-x: hidden;
@@ -59,6 +59,64 @@ img {
 
 /**** Mobile Nav 1 ****/
 #mobile_1{
+
+    $logo_width: 150px;
+
+    #mobile_header_body_content {
+        transition: margin-left .5s;
+        width: 100%;
+    }
+
+    .mobile_nav_header{
+        $i_font_size: 1.5em;
+        height: 100px;
+        background: #111;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        padding: 0px 20px;
+        &__bars{
+            font-size: $i_font_size;
+            a{
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+        &__logo{
+            flex-grow: 1;
+            text-align: center;
+            img{
+                width: $logo_width;
+            }
+        }
+        &__cart{
+            font-size: $i_font_size;
+        }
+    }
+
+    .mobile_landing_page_content{
+        height: 750px;
+        padding: 15px;
+        //width: 478px;
+        &__image{
+            background: url(../images/street.jpg) no-repeat;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            h2{
+                font-family: bangers;
+                font-size: 4em;
+                color: #fff;
+                //font-weight: 600;
+                text-align: center;
+                //text-transform: uppercase;
+            }
+        }
+    }
+
     #mobile_side_nav{
         width: 0px;
         height: 850px;
@@ -88,6 +146,10 @@ img {
                 /* text-align: right; */
                 display: inline-flex;
                 align-content: center;
+                transition: background-color 0.5s ease;
+                &:hover {
+                    background-color: #111;
+                }
                 i{
                     font-size: 20px;
                     margin-right: 15px;
@@ -104,76 +166,85 @@ img {
             align-items: center;
             //justify-content: center;
             img{
-                width: 175px;
+                width: $logo_width;
                 margin-left: 20px;
             }
         }
     }
-    #mobile_header_body_content {
-        transition: margin-left .5s;
-    }
-
-    .mobile_nav_header{
-        $i_font_size: 1.5em;
-        height: 100px;
-        background: #111;
-        display: flex;
-        align-items: center;
-        color: #fff;
-        padding: 0px 20px;
-        &__bars{
-            font-size: $i_font_size;
-            a{
-                color: #fff;
-                text-decoration: none;
-            }
-        }
-        &__logo{
-            flex-grow: 1;
-            text-align: center;
-            img{
-                width: 150px;
-            }
-        }
-        &__cart{
-            font-size: $i_font_size;
-        }
-    }
-
-    .mobile_landing_page_content{
-        height: 750px;
-        padding: 15px;
-        width: 478px;
-        &__image{
-            background: url(../images/street.jpg) no-repeat;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 15px;
-            h2{
-                font-family: bangers;
-                font-size: 4em;
-                color: #fff;
-                //font-weight: 600;
-                text-align: center;
-                //text-transform: uppercase;
-            }
-        }
-    }
-
-    
 }
 /**** Mobile Nav 1 ****/
 
 
 /**** Mobile Nav 2 ****/
 #mobile_2{
+    $logo_width: 130px;
+
+    #mobile_header_body_content {
+        transition: margin-left .5s;
+        width: 100%;
+    }
+
+    .mobile_nav_header{
+        $i_font_size: 1.5em;
+        height: 100px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        color: #111;
+        padding: 0px 20px;
+        z-index: 100;
+        box-shadow: 8px 0px 40px -10px #666;
+        &__bars{
+            font-size: $i_font_size;
+            a{
+                color: #111;
+                text-decoration: none;
+            }
+        }
+        &__logo{
+            flex-grow: 1;
+            text-align: center;
+            img{
+                width: $logo_width;
+            }
+        }
+        &__cart{
+            font-size: $i_font_size;
+        }
+    }
+
+    .mobile_landing_page_content{
+        height: 750px;
+        padding: 0px;
+        background: #4a4a4a;
+        //width: 478px;
+        &__image{
+            background: url(../images/jaguar.jpg) no-repeat;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            /* align-items: center; */
+            justify-content: center;
+            padding: 15px;
+            h2{
+                font-family: montserrat;
+                font-size: 2.5em;
+                color: #111;
+                text-align: center;
+                text-transform: uppercase;
+                width: 61%;
+                line-height: 1.45em;
+                margin-top: 1em;
+                letter-spacing: -2px;
+                word-spacing: 8px;
+            }
+        }
+    }
+
     #mobile_side_nav{
         width: 0px;
         height: 850px;
-        background-color: #222;
+        background-color: #fff;
         z-index: 100;
         position: absolute;
         padding: 0px;
@@ -189,7 +260,7 @@ img {
             a {
                 width: 100%;
                 font-family: "montserrat";
-                color: #fff;
+                color: #111;
                 text-decoration: none;
                 text-transform: uppercase;
                 font-size: 14px;
@@ -199,6 +270,12 @@ img {
                 /* text-align: right; */
                 display: inline-flex;
                 align-content: center;
+                transition: background-color 0.5s ease;
+                font-weight: 600;
+                &:hover {
+                    background-color: #111;
+                    color: #fff;
+                }
                 i{
                     font-size: 20px;
                     margin-right: 15px;
@@ -210,40 +287,57 @@ img {
             width: 100%;
             height: 100px;
             //padding: 10px;
-            background: #333;
+            background: #111;
             display: flex;
             align-items: center;
             //justify-content: center;
             img{
-                width: 175px;
+                width: $logo_width;
                 margin-left: 20px;
             }
         }
     }
+
+    
+}
+/**** Mobile Nav 2 ****/
+
+
+/**** Mobile Nav 3 ****/
+#mobile_3{
+    $logo_width: 60px;
+    
     #mobile_header_body_content {
         transition: margin-left .5s;
+        width: 100%;
     }
 
     .mobile_nav_header{
         $i_font_size: 1.5em;
         height: 100px;
-        background: #111;
+        background: #fff;
         display: flex;
         align-items: center;
-        color: #fff;
+        color: #111;
         padding: 0px 20px;
+        z-index: 100;
+        box-shadow: 8px 0px 40px -10px #666;
         &__bars{
             font-size: $i_font_size;
             a{
-                color: #fff;
+                color: #111;
                 text-decoration: none;
+                i{
+                    min-width: 25px;
+                    max-width: 25px;
+                }
             }
         }
         &__logo{
             flex-grow: 1;
             text-align: center;
             img{
-                width: 150px;
+                width: $logo_width;
             }
         }
         &__cart{
@@ -253,27 +347,270 @@ img {
 
     .mobile_landing_page_content{
         height: 750px;
-        padding: 15px;
-        width: 478px;
+        padding: 0px;
+        background: #4a4a4a;
+        //width: 478px;
         &__image{
-            background: url(../images/street.jpg) no-repeat;
+            background: url(../images/night.jpg) no-repeat;
+            background-size: cover;
             width: 100%;
             height: 100%;
             display: flex;
-            align-items: center;
+            /* align-items: center; */
             justify-content: center;
             padding: 15px;
             h2{
-                font-family: bangers;
-                font-size: 4em;
+                font-family: montserrat;
+                font-size: 2.5em;
                 color: #fff;
-                //font-weight: 600;
                 text-align: center;
-                //text-transform: uppercase;
+                text-transform: uppercase;
+                width: 61%;
+                line-height: 1.45em;
+                margin-top: 1em;
+                letter-spacing: -2px;
+                word-spacing: 8px;
+            }
+        }
+    }
+
+    #mobile_side_nav{
+        width: 0px;
+        height: 750px;
+        background-color: #fff;
+        z-index: 100;
+        position: absolute;
+        padding: 0px;
+        transition: width .3s ease-out;
+        top: 100px;
+        .menu_items_container {
+            display: flex;
+            flex-direction: column;
+            //width: 100%;
+            align-items: center;
+            position: relative;
+            //margin-top: 100px;
+            visibility: hidden;
+            a {
+                width: 100%;
+                font-family: "montserrat";
+                color: #111;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 14px;
+                padding: 30px 15px;
+                //transition: all 0.3s ease;
+                padding-left: 30px;
+                /* text-align: right; */
+                display: inline-flex;
+                align-content: center;
+                transition: background-color 0.5s ease;
+                font-weight: 600;
+                &:hover {
+                    background-color: #0C3167;
+                    color: #fff;
+                }
+                i{
+                    font-size: 20px;
+                    margin-right: 15px;
+                }
+    
             }
         }
     }
 
     
 }
-/**** Mobile Nav 2 ****/
+/**** Mobile Nav 3 ****/
+
+
+/**** Mobile Nav 4 ****/
+#mobile_4{
+    $logo_width: 110px;
+    
+    #mobile_header_body_content {
+        transition: margin-left .5s;
+        width: 100%;
+    }
+
+    .mobile_nav_header{
+        $i_font_size: 1.5em;
+        height: 100px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        color: #111;
+        padding: 0px 20px;
+        z-index: 100;
+        box-shadow: 8px 0px 40px -15px #666;
+        &__bars{
+            font-size: $i_font_size;
+            a{
+                color: #111;
+                text-decoration: none;
+                i{
+                    min-width: 25px;
+                    max-width: 25px;
+                }
+            }
+        }
+        &__logo{
+            //flex-grow: 1;
+            text-align: center;
+            padding-left: 30px;
+            img{
+                width: $logo_width;
+            }
+        }
+        &__cart{
+            flex-grow: 1;
+            text-align: right;
+            font-size: $i_font_size;
+        }
+    }
+
+    .mobile_landing_page_content{
+        height: 750px;
+        padding: 15px;
+        background: #eee;
+        &__card_small{
+            height: 250px;
+            width: 100%;
+            background-color: #fff;
+            margin-bottom: 20px;
+        }
+        &__card_large{
+            height: 400px;
+            width: 100%;
+            background-color: #fff;
+            margin-bottom: 20px;
+        }
+    }
+
+    #mobile_side_nav{
+        width: 0px;
+        //width: 60%;
+        height: 750px;
+        background-color: #333;
+        z-index: 100;
+        position: absolute;
+        padding: 0px;
+        transition: width .2s ease-out;
+        top: 100px;
+        .menu_items_container {
+            display: flex;
+            flex-direction: column;
+            //width: 100%;
+            align-items: center;
+            position: relative;
+            //margin-top: 100px;
+            visibility: hidden;
+            a {
+                width: 100%;
+                font-family: "montserrat";
+                color: #fff;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 14px;
+                padding: 15px;
+                padding-left: 30px;
+                display: inline-flex;
+                align-content: center;
+                transition: background-color 0.5s ease;
+                font-weight: 600;
+                border-bottom: 1px solid #444;
+                justify-content: space-between;
+                &:hover {
+                    background-color: #111;
+                    color: #fff;
+                }
+                &:last-child {
+                    border-bottom: none;
+                }
+                i{
+                    font-size: 15px;
+                    /* margin-right: 15px; */
+                    align-items: center;
+                    display: flex;
+                }
+    
+            }
+            .expanded_menu {
+                background-color: #222;
+                width: 100%;
+                color: #fff;
+                a {
+                    width: 100%;
+                    font-family: "montserrat";
+                    color: #fff;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    padding: 15px;
+                    padding-left: 30px;
+                    display: inline-flex;
+                    align-content: center;
+                    transition: background-color 0.5s ease;
+                    font-weight: 600;
+                    border-bottom: 1px solid #2f2f2f;
+                    justify-content: space-between;
+                    font-size: 80%;
+                    font-weight: 400;
+                    padding-left: 45px;
+                    &:hover {
+                        background-color: #111;
+                        color: #fff;
+                    }
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                    i{
+                        font-size: 12px;
+                        /* margin-right: 15px; */
+                        align-items: center;
+                        display: flex;
+                    }
+        
+                }
+            }
+        }
+        .top_search {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            background: darken(#343843, 10%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            visibility: hidden;
+            img{
+                width: 175px;
+            }
+        }
+    
+        .top_search{
+            background: #333;
+            width: 100%;
+            position: relative;
+            .search_icon {
+                position: absolute;
+                top: 42px;
+                color: #111;
+                left: 30px;
+            }
+            input{
+                background-color: #fff;
+                border: none;
+                outline: none;
+                width: 95%;
+                padding: 10px;
+                padding-left: 40px;
+                color:#111;
+                border-radius: 4px;
+            }
+        }
+    }
+
+    
+}
+/**** Mobile Nav 4 ****/

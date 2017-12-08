@@ -1,27 +1,54 @@
 <?php 
 
-$title = 'Mobile Nav 1';
+$title = 'Mobile Nav 4';
 include('include/header.php');
 
 ?>
 
 <div class="container-fluid no-gutters">
-    <div id="mobile_1" class="row mobile_screen">
+    <div id="mobile_4" class="row mobile_screen">
         <div id="mobile_side_nav" class="mobile_side_nav">
-            <div class="top_logo">
-                <img src="../_files/logos/walmart.png">
+            <div id="top_search" class="top_search">
+                <i class="fa fa-search search_icon"></i>
+                <input type="text">
             </div>
             <div id="menu_items_container" class="menu_items_container">
                 <a href="" class="active">
-                    <i class="fa fa-home"></i> Home</a>
+                    Home
+                </a>
                 <a href="">
-                    <i class="fa fa-bell"></i> Notifications</a>
+                    Deals
+                </a>
                 <a href="">
-                    <i class="fa fa-cog"></i> Settings</a>
+                    Electronics
+                    <i class="fa fa-chevron-down"></i>
+                </a>
+                <div class="expanded_menu">
+                    <a href="">
+                        Computers
+                        <i class="fa fa-chevron-right"></i>
+                    </a>
+                    <a href="">
+                        Mobiles
+                        <i class="fa fa-chevron-right"></i>
+                    </a>
+                    <a href="">
+                        Cameras
+                        <i class="fa fa-chevron-right"></i>
+                    </a>
+                    <a href="">
+                        Television
+                        <i class="fa fa-chevron-right"></i>
+                    </a>
+                </div>
                 <a href="">
-                    <i class="fa fa-dollar"></i> Pricing</a>
+                    Clothing
+                    <i class="fa fa-chevron-down"></i>
+                </a>
                 <a href="">
-                    <i class="fa fa-envelope"></i> Contact</a>
+                    Sports
+                    <i class="fa fa-chevron-down"></i>
+                </a>
             </div>
         </div>
 
@@ -33,7 +60,7 @@ include('include/header.php');
                     </a>
                 </div>
                 <div class="mobile_nav_header__logo">
-                    <img src="../_files/logos/walmart.png" alt="">
+                    <img src="../_files/logos/ebay.png" alt="">
                 </div>
                 <div class="mobile_nav_header__cart">
                     <i class="fa fa-shopping-cart"></i>
@@ -41,9 +68,8 @@ include('include/header.php');
             </div>
 
             <div id="mobile_landing_page_content" class="col-12 mobile_landing_page_content">
-                <div class="mobile_landing_page_content__image">
-                    <h2>Lorem ipsum dolor sit amet.</h2>
-                </div>
+                <div class="mobile_landing_page_content__card_small"></div>
+                <div class="mobile_landing_page_content__card_large"></div>
             </div>
         </div>
     </div>
@@ -54,8 +80,7 @@ include('include/header.php');
     function openNav() {
         document.getElementById("mobile_side_nav").style.width = "60%";
         document.getElementById("menu_items_container").style.visibility = "visible";
-        document.getElementById("mobile_header_body_content").style.marginLeft = "60%";
-        document.getElementById("mobile_landing_page_content").style.width = "478px";
+        document.getElementById("top_search").style.visibility = "visible";
 
         document.getElementById("mobile_menu_bars").setAttribute("onclick", "closeNav()");
         document.getElementById("mobile_menu_bars__icon").classList.add('fa-close');
@@ -65,11 +90,10 @@ include('include/header.php');
 
     /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
     function closeNav() {
-        document.getElementById("mobile_side_nav").style.width = "0";
         document.getElementById("menu_items_container").style.visibility = "hidden";
-        document.getElementById("mobile_header_body_content").style.marginLeft = "0";
-        document.getElementById("mobile_landing_page_content").style.width = "auto";
-        
+        document.getElementById("top_search").style.visibility = "hidden";
+        document.getElementById("mobile_side_nav").style.width = "0";
+
         document.getElementById("mobile_menu_bars").setAttribute("onclick", "openNav()");
         document.getElementById("mobile_menu_bars__icon").classList.add('fa-bars');
         document.getElementById("mobile_menu_bars__icon").classList.remove('fa-close');

@@ -8,6 +8,12 @@
         <div class="header_collection_list d-flex flex-wrap">
             <a class="<?php echo ($page_name == 'index.php'?'active': ''); ?>" href="index.php">Mobile 1</a>
             <a class="<?php echo ($page_name == 'mobile-nav-2.php'?'active': ''); ?>" href="mobile-nav-2.php">Mobile 2</a>
+            <a class="<?php echo ($page_name == 'mobile-nav-3.php'?'active': ''); ?>" href="mobile-nav-3.php">Mobile 3</a>
+            <a class="<?php echo ($page_name == 'mobile-nav-4.php'?'active': ''); ?>" href="mobile-nav-4.php">Mobile 4</a>
+            <!-- <a class="<?php echo ($page_name == 'mobile-nav-5.php'?'active': ''); ?>" href="mobile-nav-5.php">Mobile 5</a>
+            <a class="<?php echo ($page_name == 'mobile-nav-6.php'?'active': ''); ?>" href="mobile-nav-6.php">Mobile 6</a>
+            <a class="<?php echo ($page_name == 'mobile-nav-7.php'?'active': ''); ?>" href="mobile-nav-7.php">Mobile 7</a>
+            <a class="<?php echo ($page_name == 'mobile-nav-8.php'?'active': ''); ?>" href="mobile-nav-8.php">Mobile 8</a> -->
         </div>
 
         <div class="browser_detect">
