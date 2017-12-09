@@ -1,54 +1,27 @@
 <?php 
 
-$title = 'Mobile Nav 4';
+$title = 'Mobile Nav 5';
 include('include/header.php');
 
 ?>
 
 <div class="container-fluid no-gutters">
-    <div id="mobile_4" class="row mobile_screen">
+    <div id="mobile_5" class="row mobile_screen">
         <div id="mobile_side_nav" class="mobile_side_nav">
-            <div id="top_search" class="top_search">
-                <i class="fa fa-search search_icon"></i>
-                <input type="text">
+            <div class="top_register">
+                <a id="sign_up_register" class="sign_up_register">Sign Up | Login</a>
             </div>
             <div id="menu_items_container" class="menu_items_container">
-                <a href="" class="active menu_item" data-categories="">
-                    Home
-                </a>
-                <a href="" class="menu_item" data-categories="">
-                    Deals
-                </a>
-                <a href="" class="menu_item" data-categories="Computers,Mobiles,Cameras,Television">
-                    Electronics
-                    <i class="fa fa-chevron-down"></i>
-                </a>
-                <!-- <div class="expanded_menu">
-                    <a href="">
-                        Computers
-                        <i class="fa fa-chevron-right"></i>
-                    </a>
-                    <a href="">
-                        Mobiles
-                        <i class="fa fa-chevron-right"></i>
-                    </a>
-                    <a href="">
-                        Cameras
-                        <i class="fa fa-chevron-right"></i>
-                    </a>
-                    <a href="">
-                        Television
-                        <i class="fa fa-chevron-right"></i>
-                    </a> 
-                </div> -->
-                <a href="" class="menu_item" data-categories="Men,Women,Kids">
-                    Clothing
-                    <i class="fa fa-chevron-down"></i>
-                </a>
-                <a href="" class="menu_item" data-categories="Athletics,Basket Ball,Tennis">
-                    Sports
-                    <i class="fa fa-chevron-down"></i>
-                </a>
+                <a href="" class="active">
+                    <i class="fa fa-home"></i> Home</a>
+                <a href="">
+                    <i class="fa fa-bell"></i> Notifications</a>
+                <a href="">
+                    <i class="fa fa-cog"></i> Settings</a>
+                <a href="">
+                    <i class="fa fa-dollar"></i> Pricing</a>
+                <a href="">
+                    <i class="fa fa-envelope"></i> Contact</a>
             </div>
         </div>
 
@@ -60,10 +33,9 @@ include('include/header.php');
                     </a>
                 </div>
                 <div class="mobile_nav_header__logo">
-                    <img src="../_files/logos/ebay.png" alt="">
+                    <img src="../_files/logos/walmart.png" alt="">
                 </div>
                 <div class="mobile_nav_header__cart">
-                    <i class="fa fa-shopping-cart"></i>
                 </div>
             </div>
 
@@ -76,11 +48,13 @@ include('include/header.php');
 </div>
 
 <script>
-    /* Set the width of the side navigation to 60% */
+    /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
     function openNav() {
         document.getElementById("mobile_side_nav").style.width = "60%";
         document.getElementById("menu_items_container").style.visibility = "visible";
-        document.getElementById("top_search").style.visibility = "visible";
+        document.getElementById("sign_up_register").style.visibility = "visible";
+        document.getElementById("mobile_header_body_content").style.marginLeft = "60%";
+        document.getElementById("mobile_landing_page_content").style.width = "478px";
 
         document.getElementById("mobile_menu_bars").setAttribute("onclick", "closeNav()");
         document.getElementById("mobile_menu_bars__icon").classList.add('fa-close');
@@ -91,13 +65,14 @@ include('include/header.php');
     /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
     function closeNav() {
         document.getElementById("menu_items_container").style.visibility = "hidden";
-        document.getElementById("top_search").style.visibility = "hidden";
+        document.getElementById("sign_up_register").style.visibility = "hidden";
         document.getElementById("mobile_side_nav").style.width = "0";
+        document.getElementById("mobile_header_body_content").style.marginLeft = "0";
+        document.getElementById("mobile_landing_page_content").style.width = "auto";
 
         document.getElementById("mobile_menu_bars").setAttribute("onclick", "openNav()");
         document.getElementById("mobile_menu_bars__icon").classList.add('fa-bars');
         document.getElementById("mobile_menu_bars__icon").classList.remove('fa-close');
     }
-
 </script>
 <?php include('include/footer.php'); ?>

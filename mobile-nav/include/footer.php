@@ -10,10 +10,10 @@
             <a class="<?php echo ($page_name == 'mobile-nav-2.php'?'active': ''); ?>" href="mobile-nav-2.php">Mobile 2</a>
             <a class="<?php echo ($page_name == 'mobile-nav-3.php'?'active': ''); ?>" href="mobile-nav-3.php">Mobile 3</a>
             <a class="<?php echo ($page_name == 'mobile-nav-4.php'?'active': ''); ?>" href="mobile-nav-4.php">Mobile 4</a>
-            <!-- <a class="<?php echo ($page_name == 'mobile-nav-5.php'?'active': ''); ?>" href="mobile-nav-5.php">Mobile 5</a>
+            <a class="<?php echo ($page_name == 'mobile-nav-5.php'?'active': ''); ?>" href="mobile-nav-5.php">Mobile 5</a>
             <a class="<?php echo ($page_name == 'mobile-nav-6.php'?'active': ''); ?>" href="mobile-nav-6.php">Mobile 6</a>
             <a class="<?php echo ($page_name == 'mobile-nav-7.php'?'active': ''); ?>" href="mobile-nav-7.php">Mobile 7</a>
-            <a class="<?php echo ($page_name == 'mobile-nav-8.php'?'active': ''); ?>" href="mobile-nav-8.php">Mobile 8</a> -->
+            <a class="<?php echo ($page_name == 'mobile-nav-8.php'?'active': ''); ?>" href="mobile-nav-8.php">Mobile 8</a>
         </div>
 
         <div class="browser_detect">
@@ -37,7 +37,7 @@
 
 <!-- jQuery first, then Tether, then Bootstrap JS.-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+<script src="../_files/js/mobile-nav.js"></script>
 </body>
 
 </html>
