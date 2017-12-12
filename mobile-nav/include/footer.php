@@ -17,6 +17,7 @@
             <a class="<?php echo ($page_name == 'mobile-nav-9.php'?'active': ''); ?>" href="mobile-nav-9.php">Mobile 9</a>
             <a class="<?php echo ($page_name == 'mobile-nav-10.php'?'active': ''); ?>" href="mobile-nav-10.php">Mobile 10</a>
             <a class="<?php echo ($page_name == 'mobile-nav-11.php'?'active': ''); ?>" href="mobile-nav-11.php">Mobile 11</a>
+            <a class="<?php echo ($page_name == 'mobile-nav-12.php'?'active': ''); ?>" href="mobile-nav-12.php">Mobile 12</a>
         </div>
 
         <div class="browser_detect">
